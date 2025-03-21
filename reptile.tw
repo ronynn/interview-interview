@@ -1,0 +1,247 @@
+:: reptile
+
+# Chapter 4: Reptilian Reverie 
+
+The Dream Ends
+
+{reveal link:"Click to open your eyes.", passage: 'scales'}
+
+:: scales
+
+You blink, slow and heavy. A warm breeze rolls over your scales as you stretch your long, sinewy limbs. The rock beneath you is sun-baked, perfect for basking.  
+
+You let out a satisfied hiss. You had another one of those dreams.  
+
+{reveal link:"Click to recall the dream.", passage: 'scales2'}
+
+:: scales2
+
+Ah, yes. Mammalian life. The strange rituals. The self-doubt. 
+
+The endless *interviews*.  
+
+For cycles now, these visions have haunted your rest—living as some weak-skinned, warm-blooded being, fumbling through their concept of "civilization."  
+
+{reveal link:"Click to dismiss the dream.", passage: 'scales3'}
+
+
+:: scales3
+
+What nonsense. You have no *job interview*. No *dating pressure*. No *need for approval*. Just the sweet, untroubled life of an apex creature.  
+
+And now, you are hungry.  
+
+{reveal link:"Click to return to reality.", passage: 'scales4'}
+
+
+
+
+:: scales4
+You slither down from your rock and head to your burrow. Inside, the juicy remains of insects you caught earlier await you.  
+
+Perhaps after a meal, you’ll go find your son and pick a fight to see if he’s finally grown strong enough to challenge you. He is nearly your equal now, you wonder if today is the day he will finally defeat you, and if he does ... you did a decent job raising him.
+
+{reveal link:"Click to continue.", passage: 'scales5'}
+
+
+
+:: scales5
+
+### The Play is Over
+
+Darkness falls. The sound of applause surrounds you.
+Clap. Clap. Clap.
+
+You stand in a theater. The audience is getting up, leaving their seats, murmuring about the performance.
+
+You just watched a play about a reptillian creature from another world dreaming about life as a human.
+
+You notice the voice actor for the reptile, take the reptile away behind the stage in a glass jar.
+
+Your experience of the play leaves you baffled. Yet theres a sense of calmness in the end.
+
+{reveal link:"Click to sneak backstage.", passage: 'scales6'}
+
+
+:: scales6
+
+Backstage, you weave between actors still in half-costume, wiping off makeup, discussing the show.  The trainer guy really is buff in real life, you wonder if he actually is a gym trainer. You try to look for other familiar characters from the play but fail to find them.
+
+But then you spot him— *the writer and lead actor*. He leans against the wall, smoking. Without the stage lights and makeup, he looks… different. Dark circles under his eyes. Gaunt. Detached.  
+
+You hesitate, then approach.
+
+The writer watches you, cigarette smoldering between his fingers.  
+
+1. *"That was an amazing play! I loved every second of it!"*  
+[[Pick->writer_praise]]  
+
+2. *"What *was* that? I mean, a job interview, a gym, a weird stalker date? What even *was* this?"*  
+[[Pick->writer_confused]]  
+
+3. *"I was really *in* it, you know? Like, I thought I was that guy. Then—boom, lizard."*  
+[[Pick->writer_lizard]]  
+
+4. *"What’s your deal? Why write something like this?"*  
+[[Pick->writer_motive]]  
+
+
+
+:: writer_praise  
+
+The writer raises an eyebrow, taking a slow drag of his cigarette.  
+
+"Good. I suppose some people *do* enjoy watching existential breakdowns."  
+
+He exhales smoke, watching it drift toward the rafters.  
+
+{ embed passage:'finalw'}  
+
+
+
+:: writer_confused  
+
+The writer chuckles.  
+
+"You tell me. You lived it. Just another day in a scripted life, right?"  
+
+He taps his cigarette, watching the ash fall.  
+
+{ embed passage:'finalw'}  
+
+
+
+:: writer_lizard  
+ 
+The writer smirks.  
+
+"Life’s funny like that. One moment, you’re struggling for meaning. The next, you’re licking your own eyeballs."  
+
+{ embed passage:'finalw'}  
+
+
+
+:: writer_motive  
+
+The writer considers you, then shrugs.  
+
+"I don’t know. Maybe I wanted to see if you’d find an answer."  
+
+He takes a drag. "Did you?"  
+
+{ embed passage:'finalw'}
+
+
+
+
+
+
+
+
+
+
+:: finalw
+
+The writer watches you carefully, smoke curling from his cigarette.  
+
+1. *"Yeah. I think I get it now."*  
+[[Pick->understanding]]  
+
+2. *"Nope. Not even a little."*  
+[[Pick->confusion]]  
+
+3. *"Does any of this even *matter*?"*  
+[[Pick->meaning]]  
+
+4. *"I think I need a drink."*  
+[[Pick->drink]]  
+
+
+
+:: understanding  
+
+The writer nods, as if that’s enough.  
+
+{ embed passage:'curtain'}  
+
+
+
+:: confusion  
+
+The writer laughs.  
+
+"Good. That means you’re still human."  
+
+{ embed passage:'curtain'}  
+
+
+
+:: meaning  
+
+The writer smiles.  
+
+"Probably not. But then again, that never stopped anyone from acting like it did."  
+
+{ embed passage:'curtain'}  
+
+
+
+:: drink  
+
+The writer snorts.  
+
+"Now *that* is the most relatable thing you’ve said all game."  
+
+{ embed passage:'curtain'}
+
+
+
+
+
+
+:: curtain
+
+The writer drops his cigarette, grinding it under his heel.  
+
+WRITER:"Well. That’s all, then."  
+
+He extends a hand.  
+
+{reveal link:"Click to shake his hand.", passage: 'scales7'}
+
+
+:: scales7
+
+
+As you shake it, something feels… off.  
+
+Your grip passes right *through* him.  
+
+The lights flicker. The stage set begins to peel away. The audience is long gone.  
+
+You are alone.  
+
+{reveal link:"Click to wake up.", passage: 'scales8'}
+
+
+
+:: scales8
+
+You open your eyes. The sun is rising. You are back on your rock, in your reptilian form.  
+
+You stretch, flick your tongue, and sigh.  
+
+Maybe… just maybe… you’ll dream again tomorrow. 
+
+[if cringe >= 10]
+As you try to recall the dream, you remember it to be ... breathtaking, enchanting, irresistib—
+
+[cont]
+
+# The End
+
+#### Thank you for playing, be sure to play again for the alternative options if you liked the game.
+
+
+[[Play Again->Instructions]] for a replay??
+

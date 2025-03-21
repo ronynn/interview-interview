@@ -1,0 +1,548 @@
+:: WakeUp
+
+***
+
+[after 2s]
+
+# Chapter 1: Reality Check 
+
+
+The fluorescent lights hum overhead. You blink, the memory of the dream fading as the gray walls of an office come into focus. A desk sits in front of you, with three interviewers staring blankly. 
+
+The air is thick with the smell of old coffee and stale printer paper. One of the interviewers, a middle-aged man with an ever-present scowl, shuffles some papers and clears his throat.
+
+"Let’s start with something simple. Why do you want this job?"
+
+[[Ready to answer->int1]]
+
+
+:: int1
+
+
+
+"Why do you want this job?" 
+
+[after 1s]
+
+1. "I believe my skills and experience align perfectly with the company’s vision."  
+[[Pick->int11]]  
+
+2. "Honestly? I need the money. Rent’s due, and I’d rather not live off instant noodles."  
+[[Pick->int12]]  
+
+3. "To fund my secret underground fight club."  
+[[Pick->int13]]  
+
+4. "Because I saw you in my dreams last night, and I knew this was destiny."  
+[[Pick->int14]]  
+
+
+
+:: int11  
+professional:professional+1  
+--
+
+The interviewer nods, scribbling a note.  
+
+{ embed passage:'int2'}  
+
+
+
+:: int12  
+honest:honest+1  
+--
+
+One interviewer smirks; another frowns slightly.  
+
+{ embed passage:'int2'}  
+
+
+
+:: int13  
+ridiculous:ridiculous+1  
+--
+
+The interviewers exchange looks. One clears their throat.  
+
+{ embed passage:'int2'}  
+
+
+
+:: int14  
+cringe:cringe+1  
+--
+
+The lead interviewer slowly lowers their pen.  
+
+{ embed passage:'int2'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: int2
+
+"If you were a kitchen utensil, what would you be?"  
+
+1. "A knife—sharp, precise, and essential."  
+[[Pick->int21]]  
+
+2. "A spork. Because I can do it all, but no one takes me seriously."  
+[[Pick->int22]]  
+
+3. "A blender. Because I make everything chaotic but fun."  
+[[Pick->int23]]  
+
+4. "A rolling pin. Because I’d love to roll into your life."  
+[[Pick->int24]]  
+
+
+
+:: int21  
+professional:professional+1  
+--
+
+The interviewers nod approvingly.  
+
+{ embed passage:'int3'}  
+
+
+
+:: int22  
+honest:honest+1  
+--
+
+One interviewer chuckles.  
+
+{ embed passage:'int3'}  
+
+
+
+:: int23  
+ridiculous:ridiculous+1  
+--
+
+The lead interviewer squints at you.  
+
+{ embed passage:'int3'}  
+
+
+
+:: int24  
+cringe:cringe+1  
+--
+
+The room falls silent.  
+
+{ embed passage:'int3'}
+
+
+
+
+
+
+
+
+
+
+
+
+:: int3
+
+The woman in the center, leans forward. "Describe a time you faced conflict in the workplace."  
+
+[after 1s]  
+
+1. "I stayed calm, mediated the situation, and found a compromise that worked for everyone."  
+[[Pick->int31]]  
+
+2. "I told them exactly what I thought and let the chips fall where they may."  
+[[Pick->int32]]  
+
+3. "I challenged them to a duel in the parking lot. Winner got to be right."  
+[[Pick->int33]]  
+
+4. "I seduced my way out of the argument. Charm is a powerful tool, you know."  
+[[Pick->int34]]  
+
+
+
+:: int31  
+professional:professional+1  
+--
+
+The interviewer nods approvingly.  
+
+{ embed passage:'int4'}  
+
+
+
+:: int32  
+honest:honest+1  
+--
+
+One interviewer raises an eyebrow.  
+
+{ embed passage:'int4'}  
+
+
+
+:: int33  
+ridiculous:ridiculous+1  
+--
+
+The room is silent. One interviewer scribbles furiously on their notepad.  
+
+{ embed passage:'int4'}  
+
+
+
+:: int34  
+cringe:cringe+1  
+--
+
+The lead interviewer sighs and rubs his temple.  
+
+{ embed passage:'int4'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: int4
+
+The third interviewer, an older man with wire-rimmed glasses, clears his throat. "Where do you see yourself in five years?" 
+
+[after 1s]  
+
+1. "I hope to have grown within the company, taking on more responsibility and leadership roles."  
+[[Pick->int41]]  
+
+2. "Hopefully still employed and not questioning my life choices."  
+[[Pick->int42]]  
+
+3. "Ruling a small country, ideally with a pet tiger."  
+[[Pick->int43]]  
+
+4. "Standing here, in this office, but on the other side of the desk. Impressed yet?"  
+[[Pick->int44]]  
+
+
+
+:: int41  
+professional:professional+1  
+--
+
+The interviewers nod approvingly.  
+
+{ embed passage:'int5'}  
+
+
+
+:: int42  
+honest:honest+1  
+--
+
+One interviewer stifles a chuckle.  
+
+{ embed passage:'int5'}  
+
+
+
+:: int43  
+ridiculous:ridiculous+1  
+--
+
+The room is dead silent. One interviewer checks their watch.  
+
+{ embed passage:'int5'}  
+
+
+
+:: int44  
+cringe:cringe+1  
+--
+
+The lead interviewer sighs deeply.  
+
+{ embed passage:'int5'}
+
+
+
+
+
+
+
+
+
+:: int5
+
+
+"If you had to describe yourself in three words, what would they be?"  
+
+[after 1s]
+
+1. "Hardworking, innovative, dependable."  
+[[Pick->int51]]  
+
+2. "Caffeinated, exhausted, winging-it."  
+[[Pick->int52]]  
+
+3. "Dangerously unpredictable genius."  
+[[Pick->int53]]  
+
+4. "Tall, dark, and mysterious."  
+[[Pick->int54]]  
+
+
+
+:: int51  
+professional:professional+1  
+choice1:true  
+--
+
+The interviewer nods, making a note.  
+
+{ embed passage:'int6'}  
+
+
+
+:: int52  
+honest:honest+1  
+choice2:true  
+--
+
+The older woman chuckles slightly.  
+
+{ embed passage:'int6'}  
+
+
+
+:: int53  
+ridiculous:ridiculous+1  
+choice3:true  
+--
+
+The lead interviewer raises an eyebrow.  
+
+{ embed passage:'int6'}  
+
+
+
+:: int54  
+cringe:cringe+1  
+choice4:true  
+--
+
+One of the interviewers sighs audibly.  
+
+{ embed passage:'int6'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: int6
+
+The woman in the center, suddenly leans forward, lacing her fingers together. Her expression is unreadable.  
+
+"If you could have dinner with any historical figure, who would it be?"
+
+[after 1s]  
+
+1. "Someone influential in my field, so I could learn from their expertise."  
+[[Pick->int61]]  
+
+2. "Probably Nikola Tesla, just to ask him if he really hated Edison that much."  
+[[Pick->int62]]  
+
+3. "Julius Caesar, but only if I get to stab him before dessert."  
+[[Pick->int63]]  
+
+4. "Does it have to be historical? Because I’d pick you."  
+[[Pick->int64]]  
+
+
+
+:: int61  
+professional:professional+1  
+choice5:true  
+--
+
+The boss nods approvingly.  
+
+{ embed passage:'int8'}  
+
+
+
+:: int62  
+honest:honest+1  
+choice6:true  
+--
+
+One interviewer stifles a laugh.  
+
+{ embed passage:'int8'}  
+
+
+
+:: int63  
+ridiculous:ridiculous+1  
+choice7:true  
+--
+
+The room goes dead silent. Someone coughs awkwardly.  
+
+{ embed passage:'int7'}  
+
+
+
+:: int64  
+cringe:cringe+1  
+choice8:true  
+--
+
+The boss just stares at you. Someone audibly shuffles their papers.  
+
+{ embed passage:'int7'}
+
+
+
+
+
+
+
+
+
+
+
+:: int7
+
+"How would you survive in a zombie apocalypse with only office supplies?"  
+
+1. "I’d strategize, create barricades, and use teamwork to increase my survival odds."  
+[[Pick->int71]]  
+
+2. "I’d probably get eaten in the first few days because I have no survival skills beyond restarting a router."  
+[[Pick->int72]]  
+
+3. "I’d tape a stapler to a ruler and call it the Office Slayer 3000."  
+[[Pick->int73]]  
+
+4. "I wouldn’t need to fight, I’d just charm the zombies into letting me live."  
+[[Pick->int74]]  
+
+
+
+:: int71  
+professional:professional+1  
+--
+
+The boss nods approvingly.  
+
+{ embed passage:'int8'}  
+
+
+
+:: int72  
+honest:honest+1  
+--
+
+One interviewer snickers.  
+
+{ embed passage:'int8'}  
+
+
+
+:: int73  
+ridiculous:ridiculous+1  
+--
+
+The room is silent. The woman with glasses slowly writes something down.  
+
+{ embed passage:'int8'}  
+
+
+
+:: int74  
+cringe:cringe+1  
+--
+
+The lead interviewer closes his eyes like he’s in pain.  
+
+{ embed passage:'int8'}
+
+
+
+
+
+
+
+
+
+:: int8
+
+[if cringe >= 7]
+The female interviewer stands up and walks toward you with a kind smile. You brace yourself for what you assume is a job offer.  
+
+Then—*WHACK!*—she smacks you on the forehead with a rolled-up newspaper.
+
+ { embed passage:'gym'}
+
+[if professional >= 7]
+The lead interviewer finally stands up and reaches out his hand. You shake it firmly. Or, at least, you try to. 
+It’s one of those awkward handshakes—too loose, too brief, like you somehow got the timing all wrong. He gives you a polite nod, but something inside you tells you you’ll replay this moment in your head for years.  
+
+You leave feeling technically accomplished, but existentially unsatisfied.
+{ embed passage:'gym'}
+
+[cont]
+
+[else]
+
+The boss sighs. He scribbles something down, then looks up. 
+
+"Well," he says flatly, "that was certainly an interview." 
+
+You pause. Is that good? Bad?  
+
+Before you can ask, the boss stands up and wordlessly leaves the room. The others follow. You sit there, unsure if you should still be here.  
+
+Eventually, you get up and walk home, replaying every single thing you said and cringing at least five times per minute.
+
+{ embed passage:'gym'}
+
+

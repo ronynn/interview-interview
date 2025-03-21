@@ -1,0 +1,639 @@
+:: dat
+ 
+ 
+# CHAPTER 3: DATING – THE EXISTENTIAL INTERVIEW
+
+A few months pass. You have maintained your gym routine with proper discipline. There is progress, you never even knew you had abs, but does it even matter, it doesn't for the most part, you leave the gym everyday with the feeling that you can take over the world. But self doubt has become your second nature. Today is just another day. Your body aches, but your mind is even more exhausted. Was this really self-improvement, or just another way to feel lost?
+
+Then, a small break—someone notices you. A smile. A spark. Maybe this is the universe throwing you a bone. 
+
+Few conversations, an invitation to a date, feels fascinating to have someone be interested in everything you say and do. Would have felt like a prank in any other time of your life, but right now, it feels like just the progress in life that you need.
+
+Sweet conversations felt lovely to you when she said she wants your genuine response over a few things, she talks about how success is important in life, asking you why you don't try to become a policeman or soldier instead with all those muscles. You get the feeling that maybe you would have preferred just living the moment peacefully instead. But you have high hopes for this to become a real relationship.
+
+
+[[Lets Talk->d_1]]
+
+:: d_1  
+
+
+Her: "Where do you see yourself in five years?"  
+
+1. "Building a future, achieving something real. Helping make government services more accessible to remote communities."  
+[[Pick->d_1_PROFESSIONAL]]  
+
+2. "No idea. Just figuring it out as I go, just gotta pass these exams."  
+[[Pick->d_1_HONEST]]  
+
+3. "Probably in a cave training to become a ninja, or find treasure."  
+[[Pick->d_1_RIDICULOUS]]  
+
+4. "Wherever you are, beautiful."  
+[[Pick->d_1_CRINGE]]  
+
+
+
+:: d_1_PROFESSIONAL  
+professional:professional+1  
+--
+
+Her: "Ambitious. But do you really know what you’re chasing?"  
+
+{ embed passage:'d_2'}  
+
+
+
+:: d_1_HONEST  
+honest:honest+1  
+--
+
+Her: "At least you’re not pretending. But you won't get success just like that."  
+
+{ embed passage:'d_2'}  
+
+
+
+:: d_1_RIDICULOUS  
+ridiculous:ridiculous+1  
+--
+
+Her: *laughs* "That’s... unexpected. But I dig it."  
+
+{ embed passage:'d_2'}  
+
+
+
+:: d_1_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *raises an eyebrow* "Oh, wow. We’re doing that, huh?"  
+
+{ embed passage:'d_2'}  
+
+
+
+
+:: d_2  
+
+  
+
+Her: "Do you believe in fate?"  
+
+1. "Yes, everything happens for a reason."  
+[[Pick->d_2_PROFESSIONAL]]  
+
+2. "No, we make our own choices."  
+[[Pick->d_2_HONEST]]  
+
+3. "Absolutely. The stars ordained for the fate of the furious."  
+[[Pick->d_2_RIDICULOUS]]  
+
+4. "Fate brought me to you."  
+[[Pick->d_2_CRINGE]]  
+
+
+
+:: d_2_PROFESSIONAL  
+professional:professional+1  
+--
+
+Her: "Comforting thought. But what if that’s just an excuse?"  
+
+{ embed passage:'d_3'}  
+
+
+
+:: d_2_HONEST  
+honest:honest+1  
+--
+
+Her: "Not right now though, we’re definitely both here by accident." She chuckles nervously.  
+
+{ embed passage:'d_3'}  
+
+
+
+:: d_2_RIDICULOUS  
+ridiculous:ridiculous+1  
+--
+
+Her: *grins* "I hope they have good plans for me, too."  
+
+{ embed passage:'d_3'}  
+
+
+
+:: d_2_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *smirks* "Smooth. Too smooth. Do you talk like that to all the other girls?"  
+
+{ embed passage:'d_3'}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+:: d_3  
+
+  
+
+Her: "If you could relive one moment, what would it be?"  
+
+1. "A moment of success, to feel it again."  
+[[Pick->d_3_PROFESSIONAL]]  
+
+2. "A mistake, to see if I could change it."  
+[[Pick->d_3_HONEST]]  
+
+3. "That time I saw a cat riding a skateboard."  
+[[Pick->d_3_RIDICULOUS]]  
+
+4. "Right now, with you."  
+[[Pick->d_3_CRINGE]]  
+
+
+
+:: d_3_PROFESSIONAL  
+professional:professional+1  
+--
+
+Her: "Wouldn’t it be better to chase new moments instead?"  
+
+{ embed passage:'d_4'}  
+
+
+
+:: d_3_HONEST  
+honest:honest+1  
+--
+
+Her: "But then would you still be... you?"  
+
+{ embed passage:'d_4'}  
+
+
+
+:: d_3_RIDICULOUS  
+ridiculous:ridiculous+1  
+--
+
+Her: *laughs* "That’s actually a solid pick."  
+
+{ embed passage:'d_4'}  
+
+
+
+:: d_3_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *tilts head* "Are you... trying to be a movie character? You can't always be cool you know, people like their friends for the cool and the uncool, all of it."  
+
+{ embed passage:'d_4'}  
+
+
+
+
+:: d_4  
+
+  
+
+Her: "What scares you the most?"  
+
+1. "Wasting my potential."  
+[[Pick->d_4_PROFESSIONAL]]  
+
+2. "Not knowing who I really am."  
+[[Pick->d_4_HONEST]]  
+
+3. "Running out of snacks."  
+[[Pick->d_4_RIDICULOUS]]  
+
+4. "Losing you, and I just met you."  
+[[Pick->d_4_CRINGE]]  
+
+
+
+:: d_4_PROFESSIONAL  
+professional:professional+1  
+--
+
+Her: "So what are you doing about it?"  
+
+{ embed passage:'d_5'}  
+
+
+
+:: d_4_HONEST  
+honest:honest+1  
+--
+
+Her: "That’s... relatable."  
+
+{ embed passage:'d_5'}  
+
+
+
+:: d_4_RIDICULOUS  
+ridiculous:ridiculous+1  
+--
+
+Her: "Honestly? Same."  
+
+{ embed passage:'d_5'}  
+
+
+
+:: d_4_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *stares* "That’s... intense. No one ever told me they are scared of me, that is such a weird thing to say."  
+
+You wonder if your pronunciation was that bad to cause this confusion.  
+
+{ embed passage:'d_5'}
+        
+        
+        
+        
+        
+:: d_5
+ 
+Her: "Do you think you’re in control of your life?"  
+
+1. "Yes, I make my own fate."  
+[[Pick->d_5_PROFESSIONAL]]  
+
+2. "Not really. I’m just reacting."  
+[[Pick->d_5_HONEST]]  
+
+3. "Nope, I’m pretty sure a cosmic entity is making me pick answers."  
+[[Pick->d_5_RIDICULOUS]]  
+
+4. "I was in control... until I saw you."  
+[[Pick->d_5_CRINGE]]  
+
+
+
+:: d_5_PROFESSIONAL  
+professional:professional+1  
+--
+
+Her: "Then you must know exactly what you're doing, you are intentionally avoiding me aren't you? I need something bad right?"  
+
+You stare expressionless.  
+
+{ embed passage:'d_6'}  
+
+
+
+:: d_5_HONEST  
+honest:honest+1  
+--
+
+Her: "You need to stop that or else I will leav~ ... my parents would never accept a jobless husband for me."  
+
+You control the urge to say "leave what?".  
+
+{ embed passage:'d_6'}  
+
+
+
+:: d_5_RIDICULOUS  
+ridiculous:ridiculous+1  
+--
+
+Her: *grins* "I like the way you think."  
+
+{ embed passage:'d_6'}  
+
+
+
+:: d_5_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *squints* "Oh my god."  
+
+{ embed passage:'d_6'}
+
+
+
+
+
+
+
+
+:: d_6
+
+Her: "You know, if I had to describe you in three words… I’d say  
+
+[if choice1]
+"Hardworking, innovative, dependable."
+{ embed passage:"REACTION_CHOICE"}
+ 
+ 
+[if choice2]
+"Caffeinated, exhausted, winging-it."
+{ embed passage:"REACTION_CHOICE"}
+
+
+[if choice3]
+"Dangerously unpredictable genius."
+{ embed passage:"REACTION_CHOICE"}
+
+ 
+[if choice4]
+"Tall, dark, and mysterious."
+{ embed passage:"REACTION_CHOICE"}
+
+
+
+  
+
+  
+
+:: REACTION_CHOICE
+
+You freeze. That’s... weirdly familiar.
+
+What do you say?  
+
+
+1. *"Wait. How did you come up with those exact words?"*  
+[[Pick->d_6_CURIOUS]]  
+
+2. *laughs* "Huh. Funny. I think I said the same thing about myself once."  
+[[Pick->d_6_RELATABLE]]  
+
+3. *eyes widen* "No, no, no, this is too much. There's something wrong here that I am too stupid to quite put my finger on it."  
+[[Pick->d_6_PARANOID]]  
+
+4. *leans in* "And if I had to describe you… breathtaking, enchanting, irresistib—"  
+[[Pick->d_6_CRINGE]]  
+
+
+
+:: d_6_CURIOUS  
+
+Her: *laughs* "What, you think I read your diary or something?"  
+
+{ embed passage:'dinner'}  
+
+
+
+:: d_6_RELATABLE  
+
+
+Her: "So, we’re both on the same page. That’s a good sign, right?"  
+
+{ embed passage:'dinner'}  
+
+
+
+:: d_6_PARANOID
+
+Her: "What? What are you—okay, wow, you’re spiraling."  
+
+{ embed passage:'dinner'}  
+
+
+
+:: d_6_CRINGE  
+cringe:cringe+1  
+--
+
+Her: *groans* "Oh my god. You practiced that in a mirror, didn’t you?"  
+
+{ embed passage:'dinner'}
+
+
+
+
+:: dinner
+
+Her: "Alright, here's the thing, I think I am starting to get you now. If you could go to dinner with anyone, I think you’d choose…"  
+
+ 
+[if choice5]
+"Someone influential in your field. You seem like a total nerd about it." 
+{ embed passage:'STALKER_REALIZATION'}    
+    
+[if choice6]
+"Probably Nikola Tesla, just to ask him if he really hated Edison that much."
+{ embed passage:'STALKER_REALIZATION'}    
+    
+[if choice7]
+"Julius Caesar—but let's be real, you'd probably try to fight him, or stab him."
+{ embed passage:'STALKER_REALIZATION'}        
+    
+    
+[if choice8]
+"Some interviewer lady, right? That one from your last job interview? You have a *thing* for her, don’t you?" *She looks at you aggressively.* 
+{ embed passage:'STALKER_REALIZATION'}
+
+  
+
+:: STALKER_REALIZATION  
+
+You pause. How does she know this? You had answered that way before. You freeze. That’s… weirdly specific.  
+
+A mild chill runs down your spine.  
+
+
+This is… unsettling. No, more than that. This is *weird*.  
+
+You laugh nervously, "Haha, yeah, wow, great guess! Not at all creepy!"   
+
+Her: "Oh, I don’t *guess* things, I have my ways."  
+
+[if choice4]
+"I always thought you had something going with the interviewer lady".
+
+"Why did you acted like you liked me then?", you ask.
+
+Her: "I never said that." she grins, "Maybe I just *get* you. May be you are exactly like my ex, who knows." 
+
+[cont]
+
+
+Her: "Okay, WHO are you and HOW do you know this stuff?"  
+
+1. *"Okay, WHO are you and HOW do you know this stuff?"*  
+[[Pick->dinner_PARANOID]]  
+
+2. *"Well, if you already know me so well, how about we skip dinner and get married?"*  
+[[Pick->dinner_CRINGE]]  
+
+
+
+:: dinner_PARANOID  
+
+Her: *tilts head* "You’re fun when you panic." *She takes a slow sip of her drink without breaking eye contact.*  
+
+{ embed passage:'DATE_ENDING_THOUGHTS'}  
+
+
+
+:: dinner_CRINGE  
+cringe:cringe+1  
+
+Her: *laughs* "Oh, wow. You’re actually *that* kind of idiot. I hate you."  
+
+{ embed passage:'DATE_ENDING_THOUGHTS'}
+
+
+
+
+
+
+
+
+
+:: DATE_ENDING_THOUGHTS 
+
+You sit back, trying to process everything. This date has been… something.
+
+PLAYER: "Maybe we're just not ..."
+
+Her: "You know, you're nothing special. I have dozens of admirers dying for me online. I don't need someone like you."
+
+***
+
+For a long, agonizing moment, her words hang in the air as if suspended in time. The clamor of the café fades into a muted background, leaving you alone with the raw sting of her rejection. Your heart pounds, a mix of hurt and a dawning clarity that cuts deeper than you expected.
+
+In that silence, memories come rushing back: the failing interviews, the unyielding questions from your trainer, the moments when you struggled to prove your worth. You recall the pain and the hope of those sessions—the belief that if you pushed hard enough, if you became that perfect version of yourself, you’d finally be enough. The conviction you once had, honed through sweat and relentless self-improvement, now wavers under the weight of this intimate, painful confrontation. 
+
+ But now, faced with her words, all that hard work seems to unravel in an instant.
+
+***
+
+The girl’s eyes begin to glisten and a runny nose betrays soft crying sounds. You lean forward, concern mixing with confusion.
+
+"Are you crying?"
+
+Her: (sniffling) "No... my allergies are acting up."
+
+You notice the entire café is staring at you two. 
+
+She pauses, then continues with a bitter edge.
+
+Her: "My fiancé left me for some other girl. I just know you'll do the same. He got a decent job atleast after our breakup, I know where he works."
+
+You clench your jaw, stifling the urge to blurt out, "I'm not even your boyfriend yet." You know that would be hurtful.
+
+***
+
+Her voice, though harsh, carries a note of wounded despair—a hint that her cruelty is a shield for her own deep-seated hurt. She speaks of a life filled with admirers, of a digital adoration that makes her feel untouchable. And yet, behind that façade, you sense loneliness and a fear of being abandoned. The truth is raw: she is guarding herself with bitterness, unwilling or unable to mend the deep wounds of her past.
+
+She isn’t cruel by nature; her words betray a deep, unhealed wound. Her fiancé abandoned her for someone else, leaving scars that she refuses to acknowledge openly. In her retort, you hear not malice, but despair—a desperate attempt to shield herself from further hurt.
+
+You realize that the pain of rejection, the fear of never being enough, and the longing to be seen for who you truly are, all converge here. Your heart aches with the familiar tension between hope and resignation.
+
+***
+
+Every fiber of your being is torn between the urge to run away—to spare both her feelings and your own fragile pride—and the fierce desire to be the hero who mends what is broken. You wonder: if you leave now, will she remember you as a coward who fled at the first sign of pain? Yet if you stay, will you forever be haunted by comparisons to her lost love? Could there be a future where both of you rise above past scars, where her bitter memories transform into hope?
+
+The question lingers in the charged air between you, heavy with consequence. In that moment, you know that this decision will ripple through your life, defining who you are and who you’ll become. Do you retreat into the safety of solitude, protecting yourself from further pain, or do you dare to offer hope, to risk the vulnerability of connection even when it might lead to lifelong comparisons and heartache? And yet, perhaps there lies a chance—a sliver of possibility—that by embracing the pain, you might forge something genuine and transformative.
+
+***
+
+In that charged silence, the weight of the moment presses upon you. Every heartbeat echoes the significance of your choice.
+
+Her: "So… what now?"  
+
+1. *"I want to try—let's see if we can build something real together."*  
+[[Pick->date_try]]  
+
+2. *"I need time to sort through this... I'm not ready for anything serious right now."*  
+[[Pick->date_unsure]]  
+
+3. *"Maybe it's better if we just remain friends, so neither of us gets hurt even more."*  
+[[Pick->date_friends]]  
+
+
+
+:: date_try
+
+Her eyes light up but her lips betray: "I am not interested in you, my crushes change all the time, just a couple days ago I was fangirling about this cricketer so hard. You should go try find some other girl for yourself."  
+
+{ embed passage:'datend'}  
+
+
+
+:: date_unsure
+
+Her: "You just want to jump from one girl to another and flirt with everyone right? That's completely fine. Then again, you spend so much time around the gym trainer I wonder if you are gay."  
+
+{ embed passage:'datend'}  
+
+
+
+:: date_friends  
+
+Her: "I think so too, I don't believe in love anyway." Her fake smile betraying her eyes.  
+
+She points her phone towards you, an online admirer asking why she doesn't talk to him as often as before. You wonder whether anything from the past couple of weeks with you was even real—did she ever really want to be your friend like she claimed so many times? You look away.  
+
+{ embed passage:'datend'}
+
+
+
+
+
+
+
+:: datend
+
+The weight of the conversation settles over your chest like a stone.
+
+The café feels smaller, like the walls are closing in, yet the distance between you and her stretches impossibly far. For all her words, all her contradictions, all her shifting moods, there is one truth you cannot ignore: she was never looking for you.
+
+You study her face—the way her lips quirk slightly, as if she’s holding back laughter at some private joke you were never in on. The way she taps her phone absentmindedly, a window into another world where you are just one of many, another face in the blur of admirers.
+
+She was never really here, was she?
+
+***
+
+You think back to the gym trainer, to the relentless way he cut through your excuses, forcing you to face yourself. He asked if you had the guts to be real. And now, here you are, sitting across from someone who never even bothered to be real with you. But unlike the trainer, who pushed you toward something greater, this—this is just an ending. There’s nothing to prove anymore.
+
+
+A strange thing happens. Instead of feeling anger, instead of the sharp sting of rejection, a quiet understanding washes over you.
+
+It was never about her.
+
+***
+
+All this time, you weren’t chasing love. You weren’t even chasing connection. You were chasing proof. Proof that you were good enough. That someone wanted you. That you mattered.
+
+And now, watching her—seeing her truly for the first time, not as a dream, not as a validation machine, but as a person, flawed and aimless and struggling just as much as you are—you finally understand.
+
+She was never going to be the answer. Because there was no answer.
+
+You smile—not for her, not to prove anything, but because, for the first time in a long time, you feel free.
+
+You stand, sliding your chair back with the softest scrape. Maybe you should say something profound. Maybe you should be angry. But you’re too tired for that. Her eyes flicker up, but she says nothing. Maybe she never will. And yet, some part of you still lingers, waiting for her to say something that will make it all make sense. She doesn’t.
+
+
+You step outside. The night air is crisp, the neon lights buzzing softly. A sign across the street flickers uncertainly, as if hesitating between existence and oblivion. Something about it tugs at your mind, like a half-remembered dream.
+
+***
+
+And then everything shifts.
+
+The street bends, the lights stretch, the sounds warp. The café, the city, the weight of all your choices—they dissolve into something else.
+
+And then [[you wake up->reptile]]
+
+
+
+

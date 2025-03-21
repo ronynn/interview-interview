@@ -1,0 +1,481 @@
+:: StoryData
+{
+        "ifid": "9A3813E2-F6D6-48D5-802B-F4A032936D2A"
+}
+
+
+::StoryTitle
+Interview Interview
+
+
+::StoryAuthor
+Ronynn
+
+
+
+
+
+:: Stats
+
+# Statistics
+
+# Achievements
+
+- I have never met anyone as professional as you:
+- Honesty is the best policy:
+- You really are cringe:
+- Expert at sucking up to people:
+
+
+{back link}
+
+<blockquote>Notice: If you press the Stat button while at the statistics page, you can get stuck here until you restart, losing all progress.</blockquote>
+
+
+
+
+
+::Start
+config.style.page.font: "Roboto 19"
+config.style.page.verticalAlign:'top'
+config.footer.left:"[[Stats]]"
+config.body.transition.name: 'fadeInOut'
+config.page.transition.duration: '500ms'
+--
+
+# Interview Interview
+
+
+[n.b.]
+
+
+tweego -f chapbook-2 interview.tw job.tw dat.tw gym.tw reptile.tw -o interview.html
+
+
+
+[cont]
+
+*"A game about getting interviewed, answering questions and questioning the answers, and keeping it real."*
+
+You’ve been in interviews before. Some went so well you started second-guessing reality. Others hit you with bizarre, soul-crushing questions that left you wondering if they just wanted to see you squirm. Either way, you couldn’t stop thinking about them—about how every answer felt like shaping a version of yourself.   
+
+And that’s what this game is about.  
+
+Do well, do terribly, lie, flirt, or lose your mind—none of it may matter, or all of it might. Welcome to *Interview Interview*, a surreal journey through questions, choices, and the realization that maybe, just maybe, none of this was ever in your control.  
+
+### [[Start ->Instructions]]
+### [[About ->AboutGame]]
+
+
+
+:: Instructions
+
+# Instructions
+
+"Such a foul move to take me to instructions instead of starting the story already!!", you shout.
+
+"So, so sorry, I mean there are some things you might need to know, so sorry.", the author replies.
+
+Most questions have four choices each, they follow the pattern of being professional, honest, ridiculous and ... for lack of better words, cringe. Perhaps we can regard that as amorous.
+
+The Stats button takes you to the Statistics page which shows you some of the variables being tracked in the game with your responses, scoring high enough in each at times unlock different dialogues and achievements.
+
+The Achievement section, for the sake of brevity, lists all the achievements that can be unlocked as you play through.
+
+You can switch the themes using the button below, you can restart if you are dissapointed with your choices, although there is no real game over in this game. Restarting the game deletes you achievements, be sure to keep that in mind.
+
+You are ready to start.
+
+
+[[Start->OscarInterview]]
+
+
+:: AboutGame
+
+# About the Game
+
+Interviews are strange. Sometimes, you walk out feeling invincible—like you just tricked the world into thinking you’re someone worth hiring. Other times, you leave questioning everything: your skills, your personality, your very existence.
+
+[after 2s]
+
+But no matter how they go, one thing always lingers—the questions. Not just the ones they asked, but the ones you ask yourself afterward. Did I say the right thing? Could I have answered differently? Did they see through me? And deeper still—is there even such a thing as the “real” me?
+
+So I made a game about it.
+
+[after 5s]
+
+At its core, this is a game about interviews. But it's also about something bigger—how we shape ourselves based on who’s watching. How our words and choices build a version of us, one response at a time. How reality bends under the weight of perception, and whether what we say matters more than who we are.
+
+Answers you gave in one scene might resurface in another, creeping into conversations where they don’t belong. The lines between job interviews, romance, and self-reflection blur, twisting into something absurd, something unsettling. Each choice carves out a path, but—is it really yours? Or are you just picking what sounds right in the moment?
+
+Comedy and existentialism. Because life is a joke, but the punchline keeps changing.
+
+[after 7s]
+
+Trigger Warning: Breakups that cut deep. Doubts that linger. The kind of questions that might leave you staring at the ceiling at 2 AM, wondering if affection is ever real or just a well-rehearsed script. If that’s too much, take a breath. It’s just a game, after all. Fiction. It’s not like your worrying will change anything.
+
+And in the end? Maybe there’s no right answer. Maybe you were never really here at all. Maybe you're not even human—just a curious web crawler, reading this game’s code, trying to understand what it means to be alive.
+
+Who knows?
+
+Press Start. Let’s find out.
+
+
+{back link}
+
+
+
+
+
+
+
+:: OscarInterview
+professional:0
+honest:0
+ridiculous:0
+cringe:0
+choice1:false
+choice2:false
+choice3:false
+choice4:false
+choice5:false
+choice6:false
+choice7:false
+choice8:false
+impressedgym:0
+--
+
+
+The bright lights flash, the cameras click, and the buzz of excitement fills the air. You stand on the red carpet, the golden statue firm in your grip. The interviewer, dazzling in a sequined gown, approaches with a microphone in hand. Around you, the crowd hums with anticipation—some fans waving banners with your name, photographers jostling for position. The air is thick with perfume, sweat, and the unmistakable energy of stardom.
+
+{embed passage:'cint0'}
+
+:: cint0
+
+"Congratulations! How does it feel to be at the pinnacle of your career?"
+
+[after 1s]
+
+1. "It’s an incredible honor. This is a dream come true, and I’m so grateful to everyone who made this possible."
+[[Pick->cint11]]
+
+
+2. "Honestly? I still feel like an imposter. Everyone’s clapping, but I’m thinking about the last five times I bombed an audition."
+[[Pick->cint12]]
+
+
+3. "I feel like a golden god. Do I get to keep the statue, or do I have to fight someone for it?" 
+[[Pick->cint13]]
+
+
+4. "It feels like destiny, like fate brought me here... much like fate has brought you and me together tonight."
+[[Pick->cint14]]
+
+
+
+
+
+:: cint11
+professional:professional+1
+--
+The interviewer nods approvingly. The audience behind you claps, some wiping away what could be tears of admiration.  
+{ embed passage:'cint2'}
+
+
+:: cint12
+honest:honest+1
+--
+A murmur runs through the crowd. Some nod in understanding, while one reporter raises an eyebrow and scribbles something furiously in their notebook.
+{ embed passage:'cint2'}
+
+
+
+:: cint13 
+ridiculous:ridiculous+1
+--
+The interviewer blinks, momentarily thrown off. Someone in the back shouts, "Fight! Fight!" A few scattered laughs ripple through the audience.
+{ embed passage:'cint2'}
+
+
+
+:: cint14
+cringe:cringe+1
+--
+The interviewer’s eyes widen slightly. The audience shifts uncomfortably, a few giggles breaking out, while one hopeless romantic in the crowd sighs dramatically.
+
+{ embed passage:'cint2'}
+
+
+
+
+
+
+
+
+
+
+
+
+:: cint2
+
+
+
+"Rumors have been swirling about your relationship status. Care to comment?
+
+[after 2s]
+
+1. "I prefer to keep my private life private. My work speaks for itself." 
+[[Pick->cint21]]
+
+
+
+2. "Oh, I’ll comment. Love is a disaster, relationships are a battlefield, and my last date ended with an argument about pineapple on pizza, why arr they charging 100 dollars for it even as a joke?" 
+[[Pick->cint22]]
+
+
+3. "Absolutely! I am currently engaged to my work, married to the industry, and in a secret love affair with my own reflection.
+[[Pick->cint23]]
+ 
+
+4. "Love? Ah, love is like an Oscar—it glimmers in the spotlight, but it’s cold and heavy when you hold it alone... unless, of course, you were by my side." 
+[[Pick->cint24]]
+
+
+
+
+:: cint21
+professional:professional+1
+--
+
+The interviewer gives a respectful nod. The crowd hums in curiosity, but the air of mystery only adds to your allure.
+{professional}
+
+{ embed passage:'cint3'}
+
+
+
+
+:: cint22
+honest:honest+1
+--
+
+The interviewer laughs, some audience members cheer. One reporter in the back shouts, "But is pineapple acceptable?" causing an uproar.
+
+{ embed passage:'cint3'}
+
+
+
+
+:: cint23
+ridiculous:ridiculous+1
+--
+
+The interviewer chuckles, the audience claps, and someone yells, "ICONIC."
+
+{ embed passage:'cint3'}
+
+
+
+
+
+
+::cint24
+cringe:cringe+1
+--
+
+The interviewer blushes slightly. The crowd "Oooohs," and one fan dramatically faints.
+
+{ embed passage:'cint3'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: cint3
+
+
+"You were spotted with a supermodel at a luxury hotel last weekend. Should we be expecting an announcement soon?"
+
+[after 2s]
+
+1. "We were simply discussing an upcoming collaboration. Nothing more, nothing less." 
+[[Pick->cint31]]
+
+2. "Oh, yeah. We were discussing whether or not room service is worth the insane price tag. It got heated." 
+[[Pick->cint32]]
+
+    
+3. "Of course! We were plotting world domination. But, uh, keep that between us." 
+[[Pick->cint33]]
+
+
+4. "Ah, yes, but she was merely a distraction. For my heart belongs only to... the one holding this microphone." 
+[[Pick->cint34]]
+
+
+
+
+:: cint31
+professional:professional+1
+--
+
+The interviewer nods, and the audience murmurs, seeming satisfied but still intrigued.
+
+{ embed passage:'cint4'}
+
+:: cint32
+honest:honest+1
+--
+
+Laughter erupts from the crowd. The interviewer raises an eyebrow, clearly amused.
+
+{ embed passage:'cint4'}
+
+:: cint33
+ridiculous:ridiculous+1
+--
+
+The interviewer bursts into laughter, and the audience joins in. "I’ll be watching for signs," she says with a smirk.
+
+{ embed passage:'cint4'}
+
+:: cint34
+cringe:cringe+1
+--
+
+The interviewer’s face turns bright red. The crowd gasps, and someone yells, "Kiss! Kiss!"
+
+{ embed passage:'cint4'}
+
+
+
+
+
+
+
+
+
+:: cint4
+
+"What was your inspiration for this film?"
+
+[after 2s]
+
+1. "I wanted to craft a story that truly resonates with audiences, something deeply personal yet universal."
+[[Pick->cint41]]
+
+
+2. "Honestly? Deadlines, stress, and an alarming amount of coffee."
+[[Pick->cint42]]
+
+
+3. "A fever dream I had after eating expired sushi. It just made sense."
+[[Pick->cint43]]
+
+
+4. "Inspiration? You. Every word, every frame, every second of this film was secretly a love letter... to you."
+[[Pick->cint44]]
+
+
+
+:: cint41
+professional:professional+1
+--
+
+The interviewer nods in appreciation. Some members of the crowd exchange sentimental smiles.
+
+{ embed passage:'cint5'}
+
+:: cint42
+honest:honest+1
+--
+
+The interviewer laughs, a few exhausted-looking writers in the crowd clap knowingly.
+
+{ embed passage:'cint5'}
+
+:: cint43
+ridiculous:ridiculous+1
+--
+
+The interviewer tilts her head. The audience erupts into cheers, some yelling, "GENIUS."
+
+{ embed passage:'cint5'}
+
+:: cint44
+cringe:cringe+1
+--
+
+The interviewer places a hand on her chest, looking visibly flustered. The audience whistles and some fans swoon.
+
+{ embed passage:'cint5'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: cint5
+
+[if professional>=3]
+The audience behind you erupts into applause. The cheers echo, merging into a distant rumbling sound. You blink—
+
+PROFESSIONAL GIT TRIGGERED
+The subway doors open with a loud noise, jolting you awake. You had fallen asleep in your seat.
+
+    
+[if honest >= 3]
+HONEST GOT TRIG
+The lights dim, and the audience fades. You suddenly feel the weight of the statue crumbling into dust.
+You reach out, but everything turns dark—  
+
+You wake up in bed, staring at the ceiling, the fading remnants of a dream lingering in your chest.  
+
+Something about an Oscar, but also… something deeper.
+
+
+
+
+[if ridiculous >= 3]
+RIDI GOT TRIGGERED
+The interviewer leans in. "You know, this is all a dream, right?" The crowd gasps. The lights flicker. The golden statue turns into a giant banana. The world distorts—  
+
+You wake up with your head resting on a stranger’s shoulder. They look at you, extremely annoyed.  
+
+
+
+[if cringe >= 3]
+
+The interviewer stares into your eyes, lips slightly parted. "I... I never noticed before since I only watched you on the screen, but you’re... mesmerizing." She leans in for a kiss as the crowd gasps —  
+
+You wake up to find people gathered around you on the subway, watching in horrified fascination. You realize you were making kissy faces in your sleep.
+
+
+[else]
+
+THE ELSE PASSAGE GOT TRIGGERED
+The crowd slowly fades away. Wait, was this a dream? 
+You find yourself on the train to your interview.
+
+[cont]
+
+{ embed passage:'WakeUp'}
+
+
