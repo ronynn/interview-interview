@@ -11,39 +11,179 @@ Interview Interview
 ::StoryAuthor
 Ronynn
 
+:: UserStylesheet [stylesheet]
+
+.theme-switcher img {
+    filter: sepia(10%) hue-rotate(30deg) saturate(120%);
+}
+
+.theme-switcher img {
+    filter: sepia(30%) hue-rotate(-10deg) brightness(90%);
+}
+
+
+h1 {
+  line-height: 1.2;
+  font-size:2em;
+  padding:0;
+  margin:1px;
+}
+
+a {
+  color:gray;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+h1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    --border-right: 2px solid white; /* Simulates a cursor */
+    width: 0;
+    animation: typewriter 2s steps(20, end) forwards, blink 0.6s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.shake {
+    display: inline-block;
+    animation: shake 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-2px); }
+    100% { transform: translateX(2px); }
+}
+
+.spotlight {
+    display: inline-block;
+    padding: 10px;
+    animation: spotlightFade 2s ease-in-out infinite alternate;
+}
+
+@keyframes spotlightFade {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+    100% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
+}
+
+#achievement-popup {
+    position: fixed;
+    top: -100px; /* Starts offscreen */
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transition: top 0.5s ease-in-out;
+    z-index: 9999;
+}
+#achievement-popup.show {
+    top: 20px; /* Slides in */
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 :: Stats
-
 # Statistics
 
+Professionalism: {professional}/14  
+
+Honesty: {honest}/14  
+
+Ridiculousness: {ridiculous}/14  
+
+<del>Cringe</del> Amorous Behavior:{cringe}/16  
+
+
+# Chapters Read
+0. Oscars Interview: {c0}
+1. Reality Check: {c1}
+2. The Gym Trainer: {c2}
+3. The Existential Interview: {c3}
+4. Reptillian Reverie: {c4}
+
 # Achievements
+
+[if charmer]
+- Charmer
+[cont]
+
 
 - I have never met anyone as professional as you:
 - Honesty is the best policy:
 - You really are cringe:
-- Expert at sucking up to people:
+[if noman]
+- <del>Yes</del>No Man
+[cont]
 
 
+**Notice**: *If you press the Stat button while at the statistics page, you can get stuck here until you restart, losing all progress.*
+<center>
 {back link}
+</center>
 
-<blockquote>Notice: If you press the Stat button while at the statistics page, you can get stuck here until you restart, losing all progress.</blockquote>
+
+
 
 
 
 
 
 ::Start
-config.style.page.font: "Roboto 19"
+config.style.page.font: "Roboto 20"
 config.style.page.verticalAlign:'top'
 config.footer.left:"[[Stats]]"
 config.body.transition.name: 'fadeInOut'
 config.page.transition.duration: '500ms'
---
 
-# Interview Interview
+config.style.page.img: "filter: sepia(10%) hue-rotate(30deg) saturate(120%)"
+
+
+config.style.backdrop: "#EAE0D5" /* Soft Beige (Background) */
+config.style.page.color: "#3E4E50" /* Deep Forest Green (Text) */
+config.style.page.link.color: "#52796F" /* Mossy Green */
+config.style.page.link.lineColor: "#84A98C" /* Light Fern Green */
+config.style.page.link.active.color: "#D4A373" /* Warm Autumn Brown */
+config.style.page.link.active.lineColor: "#B08968" /* Rich Oak Brown */
+config.style.page.footer.color: "#3E4E50" /* Deep Forest Green (Footer Text) */
+config.style.page.footer.link.color: "#52796F" /* Mossy Green */
+config.style.page.footer.link.lineColor: "#84A98C" /* Light Fern Green */
+config.style.page.footer.link.active.color: "#D4A373" /* Warm Autumn Brown */
+config.style.page.footer.link.active.lineColor: "#B08968" /* Rich Oak Brown */
+
+
+config.style.dark.backdrop: "#282828" /* Darkest Gruvbox Gray */
+config.style.dark.page.color: "#EBDBB2" /* Soft Beige (Text) */
+config.style.dark.page.link.color: "#FABD2F" /* Gruvbox Yellow */
+config.style.dark.page.link.lineColor: "#D79921" /* Muted Yellow */
+config.style.dark.page.link.active.color: "#FE8019" /* Warm Orange */
+config.style.dark.page.link.active.lineColor: "#B57614" /* Brownish Gold */
+
+config.style.dark.page.footer.color: "#EBDBB2" /* Soft Beige (Text) */
+config.style.dark.page.footer.link.color: "#FABD2F" /* Gruvbox Yellow */
+config.style.dark.page.footer.link.lineColor: "#D79921" /* Muted Yellow */
+config.style.dark.page.footer.link.active.color: "#FE8019" /* Warm Orange */
+config.style.dark.page.footer.link.active.lineColor: "#B57614" /* Brownish Gold */
+--
 
 
 [n.b.]
@@ -51,9 +191,38 @@ config.page.transition.duration: '500ms'
 
 tweego -f chapbook-2 interview.tw job.tw dat.tw gym.tw reptile.tw -o interview.html
 
+todo
+- achievements notify
+- lineart as per pallette, more gym, date art, stage, oscar lady
 
 
 [cont]
+
+{embed image: 'reptileposter.jpeg', alt: 'Poster'}
+
+The game uses some ambient sounds, so don't get jumpscared, keep your volume at a reasonable level.
+
+[[Continue]]
+
+
+
+
+
+
+
+
+
+
+::Continue
+sound.ambient.date.url: 'date.mp3'
+sound.ambient.oscar.url: 'oscarint.mp3'
+sound.ambient.dream.url: 'dream.mp3'
+--
+{ambient sound: 'dream'}
+
+# Interview Interview
+
+
 
 *"A game about getting interviewed, answering questions and questioning the answers, and keeping it real."*
 
@@ -70,6 +239,7 @@ Do well, do terribly, lie, flirt, or lose your mind—none of it may matter, or 
 
 :: Instructions
 
+{no ambient sound}
 # Instructions
 
 "Such a foul move to take me to instructions instead of starting the story already!!", you shout.
@@ -120,6 +290,10 @@ Who knows?
 
 Press Start. Let’s find out.
 
+# Bugs
+
+Heavy effort has been put into making sure there are no bugs or spelling mistakes in the game, yet if you find one, I'd appreciate you making an issue at the [source repo of the game](https://github.com/ronynn/interview-interview) or [alerting me on the intfiction forum](https://intfiction.org/u/r01nx/summary).
+
 
 {back link}
 
@@ -143,10 +317,18 @@ choice6:false
 choice7:false
 choice8:false
 impressedgym:0
+c0:false
+c1:false
+c2:false
+c3:false
+c4:false
+noman:false
+charmer:false
 --
+{ambient sound: 'oscar'}
 
 
-The bright lights flash, the cameras click, and the buzz of excitement fills the air. You stand on the red carpet, the golden statue firm in your grip. The interviewer, dazzling in a sequined gown, approaches with a microphone in hand. Around you, the crowd hums with anticipation—some fans waving banners with your name, photographers jostling for position. The air is thick with perfume, sweat, and the unmistakable energy of stardom.
+<span class="spotlight">The bright lights flash, the cameras click, and the buzz of excitement fills the air. </span> You stand on the red carpet, the golden statue firm in your grip. The interviewer, dazzling in a sequined gown, approaches with a microphone in hand. Around you, the crowd hums with anticipation—some fans waving banners with your name, photographers jostling for position. The air is thick with perfume, sweat, and the unmistakable energy of stardom.
 
 {embed passage:'cint0'}
 
@@ -222,7 +404,7 @@ The interviewer’s eyes widen slightly. The audience shifts uncomfortably, a fe
 
 "Rumors have been swirling about your relationship status. Care to comment?
 
-[after 2s]
+[after 1s]
 
 1. "I prefer to keep my private life private. My work speaks for itself." 
 [[Pick->cint21]]
@@ -305,7 +487,7 @@ The interviewer blushes slightly. The crowd "Oooohs," and one fan dramatically f
 
 "You were spotted with a supermodel at a luxury hotel last weekend. Should we be expecting an announcement soon?"
 
-[after 2s]
+[after 1s]
 
 1. "We were simply discussing an upcoming collaboration. Nothing more, nothing less." 
 [[Pick->cint31]]
@@ -368,7 +550,7 @@ The interviewer’s face turns bright red. The crowd gasps, and someone yells, "
 
 "What was your inspiration for this film?"
 
-[after 2s]
+[after 1s]
 
 1. "I wanted to craft a story that truly resonates with audiences, something deeply personal yet universal."
 [[Pick->cint41]]
@@ -433,20 +615,24 @@ The interviewer places a hand on her chest, looking visibly flustered. The audie
 
 
 :: cint5
+c0:true
+charmer: cringe > 1
+--
 
+{charmer}
+
+{no ambient sound}
 [if professional>=3]
-The audience behind you erupts into applause. The cheers echo, merging into a distant rumbling sound. You blink—
+The audience behind you erupts into applause. The cheers echo, merging into a distant rumbling sound. You blink—  
 
-PROFESSIONAL GIT TRIGGERED
-The subway doors open with a loud noise, jolting you awake. You had fallen asleep in your seat.
+The subway doors open with a loud noise, jolting you awake. <span class="shake">You had fallen asleep in your seat.</span>
 
     
 [if honest >= 3]
-HONEST GOT TRIG
 The lights dim, and the audience fades. You suddenly feel the weight of the statue crumbling into dust.
 You reach out, but everything turns dark—  
 
-You wake up in bed, staring at the ceiling, the fading remnants of a dream lingering in your chest.  
+You wake up in the train, staring at the floor, the fading remnants of a dream lingering in your chest.  
 
 Something about an Oscar, but also… something deeper.
 
@@ -454,8 +640,7 @@ Something about an Oscar, but also… something deeper.
 
 
 [if ridiculous >= 3]
-RIDI GOT TRIGGERED
-The interviewer leans in. "You know, this is all a dream, right?" The crowd gasps. The lights flicker. The golden statue turns into a giant banana. The world distorts—  
+The interviewer leans in. "You know, <span class="shake">this is all a dream, right?</span>" The crowd gasps. The lights flicker. The golden statue turns into a giant banana. The world distorts—  
 
 You wake up with your head resting on a stranger’s shoulder. They look at you, extremely annoyed.  
 
@@ -465,15 +650,20 @@ You wake up with your head resting on a stranger’s shoulder. They look at you,
 
 The interviewer stares into your eyes, lips slightly parted. "I... I never noticed before since I only watched you on the screen, but you’re... mesmerizing." She leans in for a kiss as the crowd gasps —  
 
-You wake up to find people gathered around you on the subway, watching in horrified fascination. You realize you were making kissy faces in your sleep.
+And then you wake up, <span class="shake">It was a dream all along!</span>
+
+You find people gathered around you on the subway, watching in horrified fascination. You realize you were making kissy faces in your sleep.
 
 
 [else]
 
-THE ELSE PASSAGE GOT TRIGGERED
-The crowd slowly fades away. Wait, was this a dream? 
+The crowd slowly fades away. <span class="shake">Wait, was this really a dream? </span>
 You find yourself on the train to your interview.
 
+[cont]
+
+[if charmer]
+Achievment Unlocked: Charmer
 [cont]
 
 { embed passage:'WakeUp'}

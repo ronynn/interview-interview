@@ -2,17 +2,18 @@
 
 ***
 
-# Chapter 2: The Gym Trainer – Another Kind of Interview 
-
+# Chapter 2
+# The Gym Trainer
+[after 1s]
 You return from the job interview feeling empty. Not disappointed exactly, but haunted by the nagging thought that you could have answered everything differently—better. It replays in your mind like a bad movie you can’t turn off.
 
 A whole week passes. You lie in bed, alternating between sleep, self-doubt, and scrolling through job listings you have no intention of applying to.
 
-[after 2s]
+[after 3s]
 
 Eventually, your dad notices.
 
-[after 3s]
+[after 4s]
 
 DAD: "This isn’t right. You can’t just waste away like this. You need something to kick you back into gear."
 
@@ -47,11 +48,11 @@ The gym is surprisingly high-end. Sleek machines, spotless floors, a subtle but 
 
 And then there’s him.
 
-The trainer is built like a statue, Statue of David—lean but powerful, every movement deliberate, as much as you can see he is strong. His eyes are sharp, like they’ve seen a thousand people just like you and already know what you’re about. His arms are crossed, but you can tell he’s the kind of guy who never really *rests*.
+The trainer is built like a statue, Statue of David—powerful, every movement deliberate, as much as you can see he is strong. His eyes are sharp, like they’ve seen a thousand people just like you and already know what you’re about. His arms are crossed, but you can tell he’s the kind of guy who never really *rests*.
 
-[after 2s]  
+[after 2s]
 
-TRAINER: "So. What do you want out of this? Strength? Confidence? Love?"  
+"So. What do you want out of this? Strength? Confidence? Love?"  
 
 1. "Strength. I want to be stronger."  
 [[Pick->trainer11]]  
@@ -71,7 +72,7 @@ TRAINER: "So. What do you want out of this? Strength? Confidence? Love?"
 professional:professional+1  
 --
 
-TRAINER: "Strength, huh?"  
+"Strength, huh?"  
 
 { embed passage:'really'}  
 
@@ -81,7 +82,7 @@ TRAINER: "Strength, huh?"
 honest:honest+1  
 --
 
-TRAINER: "Confidence, you say?"  
+"Confidence, you say?"  
 
 { embed passage:'really'}  
 
@@ -91,7 +92,7 @@ TRAINER: "Confidence, you say?"
 ridiculous:ridiculous+1  
 --
 
-TRAINER: "Love, is it?"  
+"Love, is it?"  
 
 { embed passage:'really'}  
 
@@ -101,8 +102,8 @@ TRAINER: "Love, is it?"
 cringe:cringe+1  
 --
 
-TRAINER: "Ah. Obligation."  
-
+"Ah. Obligation."  
+[after 1s]
 { embed passage:'really'}  
 
 
@@ -110,9 +111,7 @@ TRAINER: "Ah. Obligation."
 
 :: really  
 
-The trainer nods slowly, then takes a deep breath.  
-
-TRAINER: "Alright. But what do you *really* mean by that?"  
+The trainer nods slowly, then takes a deep breath.  "Alright. But what do you *really* mean by that?"  
 
 1. "I guess I mean I want to stop feeling powerless."  
 [[Pick->really1]]  
@@ -130,7 +129,7 @@ TRAINER: "Alright. But what do you *really* mean by that?"
 
 :: really1  
 
-TRAINER: "So it's not just strength. It’s about control."  
+"So it's not just strength. It’s about control."  
 
 { embed passage:'real'}  
 
@@ -138,7 +137,7 @@ TRAINER: "So it's not just strength. It’s about control."
 
 :: really2  
 
-TRAINER: "So, self-respect."  
+"So, self-respect."  
 
 { embed passage:'real'}  
 
@@ -146,7 +145,7 @@ TRAINER: "So, self-respect."
 
 :: really3  
 
-TRAINER: "Ah. Recognition."  
+"Ah. Recognition."  
 
 { embed passage:'real'}  
 
@@ -154,7 +153,7 @@ TRAINER: "Ah. Recognition."
 
 :: really4  
 
-TRAINER: "Surface-level change. Got it."  
+"Surface-level change. Got it."  
 
 { embed passage:'real'}
 
@@ -183,7 +182,7 @@ The trainer watches you carefully, then slowly cracks a grin.
 
 :: QUESTION_1  
 
-TRAINER: "You kinda seem like a scaredy cat, like you chicken out easily, but I don't like to guess. Do you ever feel completely paralyzed by the fear of failure?"  
+"You kinda seem like a scaredy cat, like you chicken out easily, but I don't like to guess. Do you ever feel completely paralyzed by the fear of failure?"  
 
 1. "Yes."  
 [[Pick->QUESTION_1_YES]]  
@@ -197,7 +196,7 @@ TRAINER: "You kinda seem like a scaredy cat, like you chicken out easily, but I 
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Good. Admitting that fear is part of your truth is the first step toward conquering it."  
+"Good. Admitting that fear is part of your truth is the first step toward conquering it."  
 
 { embed passage:'QUESTION_2'}  
 
@@ -206,7 +205,7 @@ TRAINER: "Good. Admitting that fear is part of your truth is the first step towa
 :: QUESTION_1_NO  
 --
 
-TRAINER: "Pretending you’re fearless only means you’re ignoring the very thing that holds you back."  
+"Pretending you’re fearless only means you’re ignoring the very thing that holds you back."  
 
 { embed passage:'QUESTION_2'}  
 
@@ -216,7 +215,7 @@ TRAINER: "Pretending you’re fearless only means you’re ignoring the very thi
 :: QUESTION_2  
 
 
-TRAINER: "Still, this entire get-up you got, personality-wise, doesn't quite exude confidence. Feels like you are acting casual to hide the real you. Do you believe that showing weakness makes you weak?"  
+"Still, this entire get-up you got, personality-wise, doesn't quite exude confidence. Feels like you are acting casual to hide the real you. Do you believe that showing weakness makes you weak?"  
 
 1. "Yes."  
 [[Pick->QUESTION_2_YES]]  
@@ -229,7 +228,7 @@ TRAINER: "Still, this entire get-up you got, personality-wise, doesn't quite exu
 :: QUESTION_2_YES  
 --
 
-TRAINER: "Saying yes implies you think vulnerability is a flaw, but sometimes that fear keeps you from growing."  
+"Saying yes implies you think vulnerability is a flaw, but sometimes that fear keeps you from growing."  
 
 { embed passage:'QUESTION_3'}  
 
@@ -239,7 +238,7 @@ TRAINER: "Saying yes implies you think vulnerability is a flaw, but sometimes th
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Exactly. Recognizing that vulnerability is part of being human shows you have the insight to change. If you have time to hide it, you have time to fix it."  
+"Exactly. Recognizing that vulnerability is part of being human shows you have the insight to change. If you have time to hide it, you have time to fix it."  
 
 { embed passage:'QUESTION_3'}
 
@@ -255,7 +254,7 @@ TRAINER: "Exactly. Recognizing that vulnerability is part of being human shows y
 
 :: QUESTION_3  
 
-TRAINER: "Do you think you can call yourself successful when you have reached a point that you are no longer making any mistakes?"  
+"Do you think you can call yourself successful when you have reached a point that you are no longer making any mistakes?"  
 
 1. "Yes."  
 [[Pick->QUESTION_3_YES]]  
@@ -267,7 +266,7 @@ TRAINER: "Do you think you can call yourself successful when you have reached a 
 
 :: QUESTION_3_YES  
 
-TRAINER: "That might sound admirable, but it suggests you fear failure too much. Mistakes are the only way to learn, studying your own or others' is a necessity."  
+"That might sound admirable, but it suggests you fear failure too much. Mistakes are the only way to learn, studying your own or others' is a necessity."  
 
 { embed passage:'QUESTION_4'}  
 
@@ -277,7 +276,7 @@ TRAINER: "That might sound admirable, but it suggests you fear failure too much.
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Good. Understanding that failure is part of growth is crucial if you're going to move forward."  
+"Good. Understanding that failure is part of growth is crucial if you're going to move forward."  
 You can see a slight smirk on his face.  
 
 { embed passage:'QUESTION_4'}  
@@ -287,7 +286,7 @@ You can see a slight smirk on his face.
 
 :: QUESTION_4  
 
-TRAINER: "There are children around the world who have to travel miles just to fetch some water. When you got lucky enough to be born into a life of comfort, shouldn't you be more respectful and humbly enjoy the comfort?"  
+"There are children around the world who have to travel miles just to fetch some water. When you got lucky enough to be born into a life of comfort, shouldn't you be more respectful and humbly enjoy the comfort?"  
 
 1. "Yes."  
 [[Pick->QUESTION_4_YES]]  
@@ -300,7 +299,7 @@ TRAINER: "There are children around the world who have to travel miles just to f
 :: QUESTION_4_YES  
 --
 
-TRAINER: "Choosing comfort over progress means you’re settling for less than you deserve."  
+"Choosing comfort over progress means you’re settling for less than you deserve."  
 
 { embed passage:'QUESTION_5'}  
 
@@ -310,7 +309,7 @@ TRAINER: "Choosing comfort over progress means you’re settling for less than y
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Hmm. True growth comes from stepping into the unknown, even if it scares you. But always be humble."  
+"Hmm. True growth comes from stepping into the unknown, even if it scares you. But always be humble."  
 
 { embed passage:'QUESTION_5'}  
 
@@ -319,7 +318,7 @@ TRAINER: "Hmm. True growth comes from stepping into the unknown, even if it scar
 
 :: QUESTION_5  
 
-TRAINER: "Do you think giving up is sometimes the best option?"  
+"Do you think giving up is sometimes the best option?"  
 
 1. "Yes."  
 [[Pick->QUESTION_5_YES]]  
@@ -331,7 +330,7 @@ TRAINER: "Do you think giving up is sometimes the best option?"
 
 :: QUESTION_5_YES  
 
-TRAINER: "That's a defeatist mindset. Giving up means accepting mediocrity without a fight."  
+"That's a defeatist mindset. Giving up means accepting mediocrity without a fight."  
 You think about explaining it further but decide not to.  
 
 { embed passage:'QUESTION_6'}  
@@ -342,7 +341,7 @@ You think about explaining it further but decide not to.
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Good. Perseverance—even when it hurts—is what separates those who change from those who stay the same."  
+"Good. Perseverance—even when it hurts—is what separates those who change from those who stay the same."  
 
 { embed passage:'QUESTION_6'}  
 
@@ -351,7 +350,7 @@ TRAINER: "Good. Perseverance—even when it hurts—is what separates those who 
 
 :: QUESTION_6  
 
-TRAINER: "You seem like the type who stays bogged down repeatedly thinking about mistakes rather than letting go, are you?"  
+"You seem like the type who stays bogged down repeatedly thinking about mistakes rather than letting go, are you?"  
 
 1. "Yes."  
 [[Pick->QUESTION_6_YES]]  
@@ -364,8 +363,7 @@ TRAINER: "You seem like the type who stays bogged down repeatedly thinking about
 :: QUESTION_6_YES  
 impressedgym:impressedgym+1  
 --
-
-TRAINER: "Reflection is key. Learning from your mistakes shows you’re ready to grow. Never stop doing that."  
+"Reflection is key. Learning from your mistakes shows you’re ready to grow. Never stop doing that."  
 
 { embed passage:'QUESTION_7'}  
 
@@ -373,7 +371,7 @@ TRAINER: "Reflection is key. Learning from your mistakes shows you’re ready to
 
 :: QUESTION_6_NO  
 
-TRAINER: "Without reflection, you'll keep repeating the same mistakes over and over. I have seen many acting this way, only causing trouble for themselves and others, crying and pretending to be hurt when they bring trouble for their own selves. They call me rude for pointing that out."  
+"Without reflection, you'll keep repeating the same mistakes over and over. I have seen many acting this way, only causing trouble for themselves and others, crying and pretending to be hurt when they bring trouble for their own selves. They call me rude for pointing that out."  
 
 { embed passage:'QUESTION_7'}
 
@@ -390,7 +388,7 @@ TRAINER: "Without reflection, you'll keep repeating the same mistakes over and o
 
 :: QUESTION_7
 
-TRAINER: "Don't you think you are only worth something when people really see your value? I mean otherwise, you can just pretend you are the best in the world."  
+"Don't you think you are only worth something when people really see your value? I mean otherwise, you can just pretend you are the best in the world."  
 
 1. "Yes."  
 [[Pick->QUESTION_7_YES]]  
@@ -402,7 +400,7 @@ TRAINER: "Don't you think you are only worth something when people really see yo
 
 :: QUESTION_7_YES  
 
-TRAINER: "If you're relying on external validation, you're giving away your power. That's not the person I want to see."  
+"If you're relying on external validation, you're giving away your power. That's not the person I want to see."  
 
 { embed passage:'QUESTION_8'}  
 
@@ -411,8 +409,7 @@ TRAINER: "If you're relying on external validation, you're giving away your powe
 :: QUESTION_7_NO  
 impressedgym:impressedgym+1  
 --
-
-TRAINER: "Hahaha. True self-worth comes from within, not from the applause of others. Maybe you do have it, just a few more questions though."  
+"Hahaha. True self-worth comes from within, not from the applause of others. Maybe you do have it, just a few more questions though."  
 
 { embed passage:'QUESTION_8'}  
 
@@ -421,7 +418,7 @@ TRAINER: "Hahaha. True self-worth comes from within, not from the applause of ot
 
 :: QUESTION_8  
 
-TRAINER: "Is being right more important to you than being authentic?"  
+"Is being right more important to you than being authentic?"  
 
 1. "Yes."  
 [[Pick->QUESTION_8_YES]]  
@@ -434,7 +431,7 @@ TRAINER: "Is being right more important to you than being authentic?"
 :: QUESTION_8_YES  
 --
 
-TRAINER: "Always needing to be right can mask your true self. It means you’re more concerned with winning than with being real."  
+"Always needing to be right can mask your true self. It means you’re more concerned with winning than with being real."  
 
 { embed passage:'QUESTION_9'}  
 
@@ -444,7 +441,7 @@ TRAINER: "Always needing to be right can mask your true self. It means you’re 
 impressedgym:impressedgym+1  
 --
 
-TRAINER: "Exactly. Embracing authenticity, even when it makes you vulnerable, is what truly matters. Doesn't mean you stay with wrong ideas, but you don't always have to convince others of what's right."  
+"Exactly. Embracing authenticity, even when it makes you vulnerable, is what truly matters. Doesn't mean you stay with wrong ideas, but you don't always have to convince others of what's right."  
 
 { embed passage:'QUESTION_9'}  
 
@@ -454,7 +451,7 @@ TRAINER: "Exactly. Embracing authenticity, even when it makes you vulnerable, is
 :: QUESTION_9  
 
 
-TRAINER: "Do you settle for mediocrity if that can avoid some conflict?"  
+"Do you settle for mediocrity if that can avoid some conflict?"  
 
 1. "Yes."  
 [[Pick->QUESTION_9_YES]]  
@@ -466,8 +463,7 @@ TRAINER: "Do you settle for mediocrity if that can avoid some conflict?"
 
 :: QUESTION_9_YES  
 --
-
-TRAINER: "Settling for mediocrity means you're not willing to fight for your potential. This isn't about being right or moral, your muscles are gonna start giving up on day 3, you won't be able to continue a gym routine with that attitude."  
+"Settling for mediocrity means you're not willing to fight for your potential. This isn't about being right or moral, your muscles are gonna start giving up on day 3, you won't be able to continue a gym routine with that attitude."  
 
 { embed passage:'QUESTION_10'}  
 
@@ -476,8 +472,7 @@ TRAINER: "Settling for mediocrity means you're not willing to fight for your pot
 :: QUESTION_9_NO  
 impressedgym:impressedgym+1  
 --
-
-TRAINER: "Good. Refusing to settle shows you're ready to challenge yourself and grow."  
+"Good. Refusing to settle shows you're ready to challenge yourself and grow."  
 
 { embed passage:'QUESTION_10'}  
 
@@ -485,8 +480,7 @@ TRAINER: "Good. Refusing to settle shows you're ready to challenge yourself and 
 
 
 :: QUESTION_10  
-
-TRAINER: "Are you ready to stand on your own, even if it means standing alone?"  
+"Are you ready to stand on your own, even if it means standing alone?"  
 
 1. "Yes."  
 [[Pick->QUESTION_10_YES]]  
@@ -499,16 +493,14 @@ TRAINER: "Are you ready to stand on your own, even if it means standing alone?"
 :: QUESTION_10_YES  
 impressedgym:impressedgym+1  
 --
-
-TRAINER: "That's it. Embracing solitude in pursuit of your goals is a sign of true strength. It also kinda means you won't blame me if your muscles are taking time to develop. Do take rests when you really need it, but never out of laziness."  
+"That's it. Embracing solitude in pursuit of your goals is a sign of true strength. It also kinda means you won't blame me if your muscles are taking time to develop. Do take rests when you really need it, but never out of laziness."  
 
 { embed passage:'TRAINING_DECISION'}  
 
 
 
 :: QUESTION_10_NO  
-
-TRAINER: "If you need others to prop you up, you'll never find the inner strength to change. You would only end up discouraging others around you, in the gym and in real life."
+"If you need others to prop you up, you'll never find the inner strength to change. You would only end up discouraging others around you, in the gym and in real life."
 
 { embed passage:'TRAINING_DECISION'}  
 
@@ -517,20 +509,24 @@ TRAINER: "If you need others to prop you up, you'll never find the inner strengt
 
 
 :: TRAINING_DECISION
+noman:impressedgym>8
+--
 
 ***
+[if noman]
+<span class="shake">Achievement Unlocked: <del>Yes</del>No Man</span>
+[cont]
 
+[after 1s]
 [if impressedgym >= 6]
-
-TRAINER: "You've shown me you're not afraid to face the hard truths—even when they're uncomfortable. You're ready."
+"You've shown me you're not afraid to face the hard truths—even when they're uncomfortable. You're ready."
     TRAINER: "Come back tomorrow at 6 AM sharp. This is your chance to prove you're serious about change."
-{ embed passage:'ACCEPTED_TO_GYM'}  
+{ embed passage:'ACCEPTED_TO_GYM'}
 
 [if impressedgym < 6]
-
-TRAINER: "I expected more honesty from you. You’ve got a long way to go if you’re going to transform your life."
+"I expected more honesty from you. You’ve got a long way to go if you’re going to transform your life."
     TRAINER: "Go home and really think about these questions. Change isn’t for the half-hearted."
-{ embed passage:'REJECTION_SCENE'}  
+{ embed passage:'REJECTION_SCENE'}
 
 
 
@@ -540,9 +536,11 @@ TRAINER: "I expected more honesty from you. You’ve got a long way to go if you
 
 
 :: ACCEPTED_TO_GYM
+c2:true
+--
 
 You leave the gym with a newfound determination stirring within you, something unfamiliar buzzing in your chest. Despite the trainer's tough love, you feel a spark—perhaps you're finally on the path to true self-improvement.
-
+[after 1s]
 Purpose? A challenge? Either way, for the first time in weeks, you actually feel *awake*.
 
 DAD: "So, how was it? Did you finally find some motivation?"
