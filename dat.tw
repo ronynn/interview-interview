@@ -8,13 +8,38 @@
 [after 1s]
 {ambient sound: 'date'}
 
-A few months pass. You have maintained your gym routine with proper discipline. There is progress, you never even knew you had abs, but does it even matter, it doesn't for the most part, you leave the gym everyday with the feeling that you can take over the world. But self doubt has become your second nature. Today is just another day. Your body aches, but your mind is even more exhausted. Was this really self-improvement, or just another way to feel lost?
+A few months pass. You have maintained your gym routine with proper discipline. There is progress, you never even knew you had abs, but does it even matter? it doesn't for the most part, you leave the gym everyday with the feeling that you can take over the world, momentarily. Self doubt has become your second nature. Today is just another day. Your body aches, but your mind is even more exhausted. Was this really self-improvement, or just another way to feel lost?
 
 Then, a small break—someone notices you. A smile. A spark. Maybe this is the universe throwing you a bone. 
 
-Few conversations, an invitation to a date, feels fascinating to have someone be interested in everything you say and do. Would have felt like a prank in any other time of your life, but right now, it feels like just the progress in life that you need.
+Few conversations, over a couple weeks, an invitation to hangout, a date? feels fascinating to have someone be interested in everything you say and do. Would have felt like a prank in any other time of your life, but right now, it feels like just the progress in life that you need.
 
-Sweet conversations felt lovely to you when she said she wants your genuine response over a few things, she talks about how success is important in life, asking you why you don't try to become a policeman or soldier instead with all those muscles. You get the feeling that maybe you would have preferred just living the moment peacefully instead. But you have high hopes for this to become a real relationship.
+But the question is ... what do you wear?
+
+1. Casual Clothes, nothing speaks confidence that the ability to be comfortable wherever you go. [[Shirt->Dress]]
+
+2. To really be confident, you need the attire first, [[Suit, as always.->Dress]]
+
+3. May be this girl likes you for your muscles only, you are the most muscular guy in the neighbourhood at the moment, maybe one of the few in town, [[Tank top it is.->Dress]]
+
+4. Wear something hip to really show you are cool, and hide that you relate more to 90s culture despite not even being there back then. [[Branded T-Shirt.->Dress]]
+
+
+:: Dress
+
+You do you best to look your best, yet doubts linger in your head. Do you think she'd really care what you wear?
+
+[[Yes->Date1]]  
+[[No->Date1]]
+
+
+
+
+
+:: Date1
+
+
+The date is going well. Sweet conversations turned sour to you when she said she wants your genuine response over a few things, she talks about how success is important in life, asking you why you don't try to become a policeman or soldier instead with all those muscles. You get the feeling that maybe you would have preferred just living the moment peacefully instead. But you have high hopes for this to become a real relationship.
 
 
 [[Lets Talk->d_1]]
@@ -333,6 +358,19 @@ cringe:cringe+1
 
 :: d_6
 
+[if professional > 10]
+
+Achievement Unlocked: <span class="shake">I have never met anyone as professional as you.</span>
+
+[cont]
+
+[if honest > 10]
+
+Achievement Unlocked: <span class="shake">Honesty is the best policy.</span>
+
+[cont]
+
+
 "You know, if I had to describe you in three words… I’d say  
 
 [if choice1]
@@ -499,9 +537,13 @@ cringe:cringe+1
 
 :: DATE_ENDING_THOUGHTS 
 
+[if cringe > 10]
+<span class="shake">Achievement Unlocked: You really are cringe</span>
+[cont]
+
 You sit back, trying to process everything. This date has been… something.
 
-PLAYER: "Maybe we're just not ..."
+"Maybe we're just not ..."
 
 "You know, you're nothing special. I have dozens of admirers dying for me online. I don't need someone like you."
 
@@ -536,6 +578,7 @@ You clench your jaw, stifling the urge to blurt out, "I'm not even your boyfrien
 :: Think
 
 Her voice, though harsh, carries a note of wounded despair—a hint that her cruelty is a shield for her own deep-seated hurt. She speaks of a life filled with admirers, of a digital adoration that makes her feel untouchable. And yet, behind that façade, you sense loneliness and a fear of being abandoned. The truth is raw: she is guarding herself with bitterness, unwilling or unable to mend the deep wounds of her past.
+
 [after 3s]
 She isn’t cruel by nature; her words betray a deep, unhealed wound. Her fiancé abandoned her for someone else, leaving scars that she refuses to acknowledge openly. In her retort, you hear not malice, but despair—a desperate attempt to shield herself from further hurt.
 

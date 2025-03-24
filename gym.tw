@@ -48,6 +48,8 @@ The gym is surprisingly high-end. Sleek machines, spotless floors, a subtle but 
 
 And then there’s him.
 
+{embed image: 'gymt.png', alt: 'Ripped Gym Trainer'}
+
 The trainer is built like a statue, Statue of David—powerful, every movement deliberate, as much as you can see he is strong. His eyes are sharp, like they’ve seen a thousand people just like you and already know what you’re about. His arms are crossed, but you can tell he’s the kind of guy who never really *rests*.
 
 [after 2s]
@@ -509,7 +511,7 @@ impressedgym:impressedgym+1
 
 
 :: TRAINING_DECISION
-noman:impressedgym>8
+noman: impressedgym > 8
 --
 
 ***
@@ -520,12 +522,12 @@ noman:impressedgym>8
 [after 1s]
 [if impressedgym >= 6]
 "You've shown me you're not afraid to face the hard truths—even when they're uncomfortable. You're ready."
-    TRAINER: "Come back tomorrow at 6 AM sharp. This is your chance to prove you're serious about change."
+    "Come back tomorrow at 6 AM sharp. This is your chance to prove you're serious about change."
 { embed passage:'ACCEPTED_TO_GYM'}
 
 [if impressedgym < 6]
 "I expected more honesty from you. You’ve got a long way to go if you’re going to transform your life."
-    TRAINER: "Go home and really think about these questions. Change isn’t for the half-hearted."
+     "Go home and really think about these questions. Change isn’t for the half-hearted."
 { embed passage:'REJECTION_SCENE'}
 
 

@@ -71,24 +71,7 @@ h1 {
     0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
     100% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
 }
-
-#achievement-popup {
-    position: fixed;
-    top: -100px; /* Starts offscreen */
-    right: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    transition: top 0.5s ease-in-out;
-    z-index: 9999;
-}
-#achievement-popup.show {
-    top: 20px; /* Slides in */
-}
+    
 
 
 
@@ -105,13 +88,13 @@ h1 {
 :: Stats
 # Statistics
 
-Professionalism: {professional}/14  
+Professionalism: {professional}/10
 
-Honesty: {honest}/14  
+Honesty: {honest}/10
 
-Ridiculousness: {ridiculous}/14  
+Ridiculousness: {ridiculous}/10
 
-<del>Cringe</del> Amorous Behavior:{cringe}/16  
+<del>Cringe</del> Amorous Behavior:{cringe}/12
 
 
 # Chapters Read
@@ -123,20 +106,24 @@ Ridiculousness: {ridiculous}/14
 
 # Achievements
 
-[if charmer]
-- Charmer
+[if professional > 10]
+- I have never met anyone as professional as you: Answer over 10 questions professionally.
 [cont]
 
+[if honest > 10 ]
+- Honesty is the best policy: Answer over 10 questions honestly.
+[cont]
 
-- I have never met anyone as professional as you:
-- Honesty is the best policy:
-- You really are cringe:
+[if cringe > 10]
+- You really are cringe. Answer over 10 questions amorously.
+[cont]
+
 [if noman]
-- <del>Yes</del>No Man
+- <del>Yes</del>No Man: Be agreeable to Gym Trainer.
 [cont]
 
 
-**Notice**: *If you press the Stat button while at the statistics page, you can get stuck here until you restart, losing all progress.*
+**Notice**: *If you press the Stats button while at the statistics page, you can get stuck here until you restart, losing all progress.*
 <center>
 {back link}
 </center>
@@ -192,13 +179,13 @@ config.style.dark.page.footer.link.active.lineColor: "#B57614" /* Brownish Gold 
 tweego -f chapbook-2 interview.tw job.tw dat.tw gym.tw reptile.tw -o interview.html
 
 todo
-- achievements notify
+- dress selector, think more additions
 - lineart as per pallette, more gym, date art, stage, oscar lady
 
 
 [cont]
 
-{embed image: 'reptileposter.jpeg', alt: 'Poster'}
+{embed image: 'reptileposter.png', alt: 'Poster'}
 
 The game uses some ambient sounds, so don't get jumpscared, keep your volume at a reasonable level.
 
@@ -323,7 +310,6 @@ c2:false
 c3:false
 c4:false
 noman:false
-charmer:false
 --
 {ambient sound: 'oscar'}
 
@@ -616,12 +602,11 @@ The interviewer places a hand on her chest, looking visibly flustered. The audie
 
 :: cint5
 c0:true
-charmer: cringe > 1
 --
 
-{charmer}
 
 {no ambient sound}
+
 [if professional>=3]
 The audience behind you erupts into applause. The cheers echo, merging into a distant rumbling sound. You blink—  
 
@@ -662,9 +647,6 @@ You find yourself on the train to your interview.
 
 [cont]
 
-[if charmer]
-Achievment Unlocked: Charmer
-[cont]
 
 { embed passage:'WakeUp'}
 
