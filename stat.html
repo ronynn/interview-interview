@@ -225,7 +225,7 @@ ${i}`),b(i)}function $e(n,e=!1){return Ko(zo(n),An(),Pn(),e)}class Yo extends fe
     let enemiesDefeated = engine.state.get("enemiesDefeated");
     let secretsFound = engine.state.get("secretsFound");
 
-    // Construct the URL for GoatCounter
+    // Construct the URL for GoatCounter tracking
     let goatCounterURL = "https://your-goatcounter.goatcounter.com/count" +
         "?event=endgame" +
         "&score=" + encodeURIComponent(score) +
@@ -233,13 +233,12 @@ ${i}`),b(i)}function $e(n,e=!1){return Ko(zo(n),An(),Pn(),e)}class Yo extends fe
         "&enemiesDefeated=" + encodeURIComponent(enemiesDefeated) +
         "&secretsFound=" + encodeURIComponent(secretsFound);
 
-    // Send the tracking request
-    fetch(goatCounterURL, { mode: "no-cors" })
-        .then(() => {
-            console.log("Stats sent to GoatCounter.");
-            alert("Game Over! Stats sent.");
-        })
-        .catch((err) => console.error("Error sending stats:", err));
+    // Send tracking data using an image request
+    let img = new Image();
+    img.src = goatCounterURL;
+    
+    console.log("Stats sent to GoatCounter.");
+    alert("Game Over! Stats sent.");
 };</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">score: 120  
 timePlayed: 35  
 enemiesDefeated: 1  

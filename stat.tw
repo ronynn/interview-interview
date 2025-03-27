@@ -20,21 +20,20 @@ window.sendStats = function() {
     let enemiesDefeated = engine.state.get("enemiesDefeated");
     let secretsFound = engine.state.get("secretsFound");
 
-    // Construct the URL for GoatCounter
-    let goatCounterURL = "https://ronynn.goatcounter.com/count" +
+    // Construct the URL for GoatCounter tracking
+    let goatCounterURL = "https://your-goatcounter.goatcounter.com/count" +
         "?event=endgame" +
         "&score=" + encodeURIComponent(score) +
         "&timePlayed=" + encodeURIComponent(timePlayed) +
         "&enemiesDefeated=" + encodeURIComponent(enemiesDefeated) +
         "&secretsFound=" + encodeURIComponent(secretsFound);
 
-    // Send the tracking request
-    fetch(goatCounterURL, { mode: "no-cors" })
-        .then(() => {
-            console.log("Stats sent to GoatCounter.");
-            alert("Game Over! Stats sent.");
-        })
-        .catch((err) => console.error("Error sending stats:", err));
+    // Send tracking data using an image request
+    let img = new Image();
+    img.src = goatCounterURL;
+    
+    console.log("Stats sent to GoatCounter.");
+    alert("Game Over! Stats sent.");
 };
 
 :: StoryData
