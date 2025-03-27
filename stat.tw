@@ -13,25 +13,42 @@ When you're ready, click below to finish the game and send your stats.
 <button class="endgame-button" onclick="sendStats()">Finish Game</button>  
 
 :: UserScript[script]
+// Ensure GoatCounter script is loaded
+if (!window.goatcounter) {
+    let script = document.createElement("script");
+    script.src = "https://your-goatcounter.goatcounter.com/count.js";
+    script.async = true;
+    document.head.appendChild(script);
+}
+
+// Function to send stats
 window.sendStats = function() {
-    // Get the tracked variables from Chapbook
+    if (!window.goatcounter) {
+        console.error("GoatCounter script not loaded.");
+        alert("Error: Tracking not initialized.");
+        return;
+    }
+
+    // Get tracked variables
     let score = engine.state.get("score");
     let timePlayed = engine.state.get("timePlayed");
     let enemiesDefeated = engine.state.get("enemiesDefeated");
     let secretsFound = engine.state.get("secretsFound");
 
-    // Construct the URL for GoatCounter tracking
-    let goatCounterURL = "https://ronynn.goatcounter.com/count" +
-        "?event=endgame" +
-        "&score=" + encodeURIComponent(score) +
-        "&timePlayed=" + encodeURIComponent(timePlayed) +
-        "&enemiesDefeated=" + encodeURIComponent(enemiesDefeated) +
-        "&secretsFound=" + encodeURIComponent(secretsFound);
+    // Send event using GoatCounter's `count()` function
+    window.goatcounter.count({
+        path: "endgame-stats",
+        title: "Game End Stats",
+        event: true,
+        referrer: "twine-game",
+        data: {
+            score: score,
+            timePlayed: timePlayed,
+            enemiesDefeated: enemiesDefeated,
+            secretsFound: secretsFound
+        }
+    });
 
-    // Send tracking data using an image request
-    let img = new Image();
-    img.src = goatCounterURL;
-    
     console.log("Stats sent to GoatCounter.");
     alert("Game Over! Stats sent.");
 };
