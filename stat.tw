@@ -21,7 +21,7 @@ window.sendStats = function() {
     let secretsFound = engine.state.get("secretsFound");
 
     // Construct the URL for GoatCounter tracking
-    let goatCounterURL = "https://your-goatcounter.goatcounter.com/count" +
+    let goatCounterURL = "https://ronynn.goatcounter.com/count" +
         "?event=endgame" +
         "&score=" + encodeURIComponent(score) +
         "&timePlayed=" + encodeURIComponent(timePlayed) +
