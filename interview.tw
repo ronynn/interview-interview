@@ -13,13 +13,7 @@ Ronynn
 
 :: UserStylesheet [stylesheet]
 
-.theme-switcher img {
-    filter: sepia(10%) hue-rotate(30deg) saturate(120%);
-}
 
-.theme-switcher img {
-    filter: sepia(30%) hue-rotate(-10deg) brightness(90%);
-}
 
 
 h1 {
@@ -71,61 +65,47 @@ h1 {
     0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
     100% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
 }
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
 :: Stats
 # Statistics
 
-Professionalism: {professional}/10
+Professionalism: {professional}/15
 
-Honesty: {honest}/10
+Honesty: {honest}/15
 
-Ridiculousness: {ridiculous}/10
+Ridiculousness: {ridiculous}/15
 
-<del>Cringe</del> Amorous Behavior:{cringe}/12
+<del>Cringe</del> Amorous Behavior:{cringe}/18
 
-
-# Chapters Read
-0. Oscars Interview: {c0}
-1. Reality Check: {c1}
-2. The Gym Trainer: {c2}
-3. The Existential Interview: {c3}
-4. Reptillian Reverie: {c4}
 
 # Achievements
+Achievements stay hidden unless you won the achievement.  
 
-[if professional > 10]
-- I have never met anyone as professional as you: Answer over 10 questions professionally.
+- The Professional: 
+[if professional > 10;append]
+I have never met anyone as professional as you- Answer over 10 questions professionally.
 [cont]
 
-[if honest > 10 ]
-- Honesty is the best policy: Answer over 10 questions honestly.
+- Truther:  
+[if honest > 10;append]
+Honesty is the best policy - Answer over 10 questions honestly.
 [cont]
 
-[if cringe > 10]
-- You really are cringe. Answer over 10 questions amorously.
+- You ... Really: 
+[if cringe > 10;append]
+You really are cringe - Answer over 10 questions amorously.
 [cont]
 
-[if noman]
-- <del>Yes</del>No Man: Be agreeable to Gym Trainer.
+- Gym Chapter Achievement: 
+[if noman;append]
+<del>Yes</del>No Man - Be agreeable to Gym Trainer.
 [cont]
 
+On game restart the achievements are reset. How many did you manage to unlock in a single run? Share your screenshots on the intfiction forum with your review.
 
-**Notice**: *If you press the Stats button while at the statistics page, you can get stuck here until you restart, losing all progress.*
-<center>
 {back link}
+
 </center>
 
 
@@ -138,9 +118,11 @@ Ridiculousness: {ridiculous}/10
 ::Start
 config.style.page.font: "Roboto 20"
 config.style.page.verticalAlign:'top'
-config.footer.left:"[[Stats]]"
+config.footer.left:"Interview Interview"
 config.body.transition.name: 'fadeInOut'
 config.page.transition.duration: '500ms'
+config.style.page.fork.divider.style: 'dotted'
+
 
 config.style.page.img: "filter: sepia(10%) hue-rotate(30deg) saturate(120%)"
 
@@ -176,24 +158,19 @@ config.style.dark.page.footer.link.active.lineColor: "#B57614" /* Brownish Gold 
 [n.b.]
 
 
-tweego -f chapbook-2 interview.tw job.tw dat.tw gym.tw reptile.tw -o interview.html
+tweego -f chapbook-2 interview.tw job.tw dat.tw gym.tw reptile.tw -o index.html
 
-todo
-- dress selector, think more additions
-- lineart as per pallette, more gym, date art, stage, oscar lady
 
 
 [cont]
 
-{embed image: 'reptileposter.png', alt: 'Poster'}
+{embed image: 'cover_small.png', alt: 'Poster'}
 
 The game uses some ambient sounds, so don't get jumpscared, keep your volume at a reasonable level.
 
+
+
 [[Continue]]
-
-
-
-
 
 
 
@@ -219,9 +196,9 @@ And that’s what this game is about.
 
 Do well, do terribly, lie, flirt, or lose your mind—none of it may matter, or all of it might. Welcome to *Interview Interview*, a surreal journey through questions, choices, and the realization that maybe, just maybe, none of this was ever in your control.  
 
-### [[Start ->Instructions]]
-### [[About ->AboutGame]]
-
+> [[Start ->Instructions]]
+> [[About ->AboutGame]]
+> [[Credits]]
 
 
 :: Instructions
@@ -231,17 +208,29 @@ Do well, do terribly, lie, flirt, or lose your mind—none of it may matter, or 
 
 "Such a foul move to take me to instructions instead of starting the story already!!", you shout.
 
-"So, so sorry, I mean there are some things you might need to know, so sorry.", the author replies.
-
 Most questions have four choices each, they follow the pattern of being professional, honest, ridiculous and ... for lack of better words, cringe. Perhaps we can regard that as amorous.
 
-The Stats button takes you to the Statistics page which shows you some of the variables being tracked in the game with your responses, scoring high enough in each at times unlock different dialogues and achievements.
-
-The Achievement section, for the sake of brevity, lists all the achievements that can be unlocked as you play through.
+Finishing the game takes you to the Statistics page which shows you some of the variables being tracked in the game with your responses, scoring high enough in each at times unlock different dialogues and achievements. The Achievement section lists all the achievements unlocked after you complete the story.
 
 You can switch the themes using the button below, you can restart if you are dissapointed with your choices, although there is no real game over in this game. Restarting the game deletes you achievements, be sure to keep that in mind.
 
-You are ready to start.
+[[Chapters]]
+
+:: Chapters
+
+
+# Chapters
+
+Chapter 0: Oscars Interview  
+
+Chapter 1: Reality Check  
+
+Chapter 2: The Gym Trainer  
+
+Chapter 3: The Existential Interview  
+
+Chapter 4: Reptillian Reverie 
+
 
 
 [[Start->OscarInterview]]
@@ -275,14 +264,37 @@ And in the end? Maybe there’s no right answer. Maybe you were never really her
 
 Who knows?
 
-Press Start. Let’s find out.
-
-# Bugs
-
+Press Start. Let’s find out.  
+  
+  
+# Bugs  
+  
 Heavy effort has been put into making sure there are no bugs or spelling mistakes in the game, yet if you find one, I'd appreciate you making an issue at the [source repo of the game](https://github.com/ronynn/interview-interview) or [alerting me on the intfiction forum](https://intfiction.org/u/r01nx/summary).
 
 
 {back link}
+
+
+
+:: Credits
+
+The Game uses the Twine StoryFormat Chapbook, and tries to make the best use of it.
+
+I originally wrote the story with ink but then got interested in Chapbook, so much so that I ported some older projects to it to learn it better.
+
+Music: I tried to study synths and made the music, oscillation changes can change the entire vibe at times, LMMS
+
+Art: Autodesk sketchbook, Aseprite, MSDesigner
+
+Playtester: Thanks to netto_no_neko for testing out the game.
+
+
+{back link}
+
+
+
+
+
 
 
 

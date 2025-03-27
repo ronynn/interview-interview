@@ -511,7 +511,7 @@ impressedgym:impressedgym+1
 
 
 :: TRAINING_DECISION
-noman: impressedgym > 8
+noman: impressedgym > 7
 --
 
 ***

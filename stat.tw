@@ -1,0 +1,43 @@
+:: StoryTitle
+Chapbook: Tracking Endgame Stats  
+
+:: Start
+score: 120  
+timePlayed: 35  
+enemiesDefeated: 1  
+secretsFound: 3  
+--
+
+When you're ready, click below to finish the game and send your stats.  
+
+<button class="endgame-button" onclick="sendStats()">Finish Game</button>  
+
+:: UserScript[script]
+window.sendStats = function() {
+    // Get the tracked variables from Chapbook
+    let score = engine.state.get("score");
+    let timePlayed = engine.state.get("timePlayed");
+    let enemiesDefeated = engine.state.get("enemiesDefeated");
+    let secretsFound = engine.state.get("secretsFound");
+
+    // Construct the URL for GoatCounter
+    let goatCounterURL = "https://ronynn.goatcounter.com/count" +
+        "?event=endgame" +
+        "&score=" + encodeURIComponent(score) +
+        "&timePlayed=" + encodeURIComponent(timePlayed) +
+        "&enemiesDefeated=" + encodeURIComponent(enemiesDefeated) +
+        "&secretsFound=" + encodeURIComponent(secretsFound);
+
+    // Send the tracking request
+    fetch(goatCounterURL, { mode: "no-cors" })
+        .then(() => {
+            console.log("Stats sent to GoatCounter.");
+            alert("Game Over! Stats sent.");
+        })
+        .catch((err) => console.error("Error sending stats:", err));
+};
+
+:: StoryData
+{
+    "ifid": "04ADD788-392A-49B0-8536-7A7ADAEA4D66"
+}
