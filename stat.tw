@@ -8,49 +8,64 @@ enemiesDefeated: 1
 secretsFound: 3  
 --
 
+<script data-goatcounter="https://ronynn.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
 When you're ready, click below to finish the game and send your stats.  
 
 <button class="endgame-button" onclick="sendStats()">Finish Game</button>  
 
 :: UserScript[script]
-// Ensure GoatCounter script is loaded
-if (!window.goatcounter) {
+// Function to load GoatCounter script if missing
+function loadGoatCounter(callback) {
+    if (window.goatcounter) {
+        callback(); // Already loaded, just run the callback
+        return;
+    }
+
     let script = document.createElement("script");
-    script.src = "https://your-goatcounter.goatcounter.com/count.js";
+    script.src = "https://ronynn.goatcounter.com/count.js";
     script.async = true;
+    script.onload = callback; // Call the function once script loads
+    script.onerror = () => {
+        console.error("Failed to load GoatCounter.");
+        alert("Error: Could not load tracking.");
+    };
+
     document.head.appendChild(script);
 }
 
 // Function to send stats
 window.sendStats = function() {
-    if (!window.goatcounter) {
-        console.error("GoatCounter script not loaded.");
-        alert("Error: Tracking not initialized.");
-        return;
-    }
-
-    // Get tracked variables
-    let score = engine.state.get("score");
-    let timePlayed = engine.state.get("timePlayed");
-    let enemiesDefeated = engine.state.get("enemiesDefeated");
-    let secretsFound = engine.state.get("secretsFound");
-
-    // Send event using GoatCounter's `count()` function
-    window.goatcounter.count({
-        path: "endgame-stats",
-        title: "Game End Stats",
-        event: true,
-        referrer: "twine-game",
-        data: {
-            score: score,
-            timePlayed: timePlayed,
-            enemiesDefeated: enemiesDefeated,
-            secretsFound: secretsFound
+    loadGoatCounter(() => {
+        if (!window.goatcounter) {
+            console.error("GoatCounter script still not available.");
+            alert("Error: Tracking not initialized.");
+            return;
         }
-    });
 
-    console.log("Stats sent to GoatCounter.");
-    alert("Game Over! Stats sent.");
+        // Get tracked variables
+        let score = engine.state.get("score");
+        let timePlayed = engine.state.get("timePlayed");
+        let enemiesDefeated = engine.state.get("enemiesDefeated");
+        let secretsFound = engine.state.get("secretsFound");
+
+        // Send event using GoatCounter's `count()` function
+        window.goatcounter.count({
+            path: "endgame-stats",
+            title: "Game End Stats",
+            event: true,
+            referrer: "twine-game",
+            data: {
+                score: score,
+                timePlayed: timePlayed,
+                enemiesDefeated: enemiesDefeated,
+                secretsFound: secretsFound
+            }
+        });
+
+        console.log("Stats sent to GoatCounter.");
+        alert("Game Over! Stats sent.");
+    });
 };
 
 :: StoryData
