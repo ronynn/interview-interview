@@ -6,7 +6,7 @@
 The Dream Ends
   
 
-> {reveal link:"Click to open your eyes.", passage: 'scales'}
+{reveal link:"Click to open your eyes.", passage: 'scales'}
 
 :: scales
 {ambient sound: 'dream'}
@@ -17,7 +17,7 @@ You blink, slow and heavy. A warm breeze rolls over your scales as you stretch y
 
 You let out a satisfied hiss. You had another one of those dreams.  
 
-> {reveal link:"Click to recall the dream.", passage: 'scales2'}
+{reveal link:"Click to recall the dream.", passage: 'scales2'}
 
 :: scales2
 
