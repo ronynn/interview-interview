@@ -4,8 +4,9 @@
 # Reptilian Reverie 
 [after 1s]
 The Dream Ends
+  
 
-{reveal link:"Click to open your eyes.", passage: 'scales'}
+> {reveal link:"Click to open your eyes.", passage: 'scales'}
 
 :: scales
 {ambient sound: 'dream'}
@@ -16,7 +17,7 @@ You blink, slow and heavy. A warm breeze rolls over your scales as you stretch y
 
 You let out a satisfied hiss. You had another one of those dreams.  
 
-{reveal link:"Click to recall the dream.", passage: 'scales2'}
+> {reveal link:"Click to recall the dream.", passage: 'scales2'}
 
 :: scales2
 
@@ -35,7 +36,7 @@ What nonsense. You have no *job interview*. No *dating pressure*. No *need for a
 
 And now, you are hungry.  
 
-{reveal link:"Click to return to reality.", passage: 'scales4'}
+> {reveal link:"Click to return to reality.", passage: 'scales4'}
 
 
 :: scales4
@@ -43,7 +44,7 @@ You slither down from your rock and head to your burrow. Inside, the juicy remai
 
 Perhaps after a meal, you’ll go find your son and pick a fight to see if he’s finally grown strong enough to challenge you. He is nearly your equal now, you wonder if today is the day he will finally defeat you, and if he does ... you did a decent job raising him.
 
-[[Click to continue.->scales5]]
+> [[Click to continue.->scales5]]
 
 
 
@@ -64,7 +65,7 @@ Your experience of the play leaves you baffled. Yet theres a sense of calmness i
 You notice the voice actor for the reptile, take the reptile away behind the stage in a glass jar.
 
 
-[[Sneak backstage]]
+> [[Sneak backstage]]
 
 
 :: Sneak backstage
@@ -211,7 +212,7 @@ WRITER:"Well. That’s all, then."
 
 He extends a hand.  
 
-{reveal link:"Click to shake his hand.", passage: 'scales7'}
+> {reveal link:"Click to shake his hand.", passage: 'scales7'}
 
 
 :: scales7
@@ -225,7 +226,7 @@ The lights flicker. The stage set begins to peel away. The audience is long gone
 
 You are alone.  
 
-[["Click to wake up"->scales8]]
+> [["Click to wake up"->scales8]]
 
 
 :: scales8
@@ -247,5 +248,5 @@ As you try to recall the dream, you remember it to be ... breathtaking, enchanti
 Thank you for playing, be sure to play again for the alternative options if you liked the game. You can check the Stats to see your achievements
 
 > [[Check Statistics->Stats]]
-> [[Play Again->Instructions]]
+> [[Play Again->START GAME]]
 

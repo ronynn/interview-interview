@@ -172,7 +172,7 @@ The trainer nods slowly, then takes a deep breath.  "Alright. But what do you *r
 The trainer watches you carefully, then slowly cracks a grin.
 
 "Good. We’re getting somewhere. Listen up, bro. I'm not here to hear what you think I want to hear. I just want to know if you can be real—with yourself and with me. I don't want to feel hopeless watching you laze around with your fat ass and pot belly telling me you feel tired. If it was about the money I would want guys like that to give me money for doing nothing, not my style bro.
- Answer honestly what I ask of you, with a simple yes or no. If I see potential, you are going to become a changed man, I will make sure of that."
+ Answer honestly what I ask of you, with a simple yes or no. If I see potential, you are going to become a changed person, I will make sure of that."
 
 [[I am ready->QUESTION_1]]
 
@@ -198,7 +198,7 @@ The trainer watches you carefully, then slowly cracks a grin.
 impressedgym:impressedgym+1  
 --
 
-"Good. Admitting that fear is part of your truth is the first step toward conquering it."  
+"Good. Admitting that fear is part of you, the first step toward conquering it."  
 
 { embed passage:'QUESTION_2'}  
 

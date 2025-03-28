@@ -170,14 +170,14 @@ The game uses some ambient sounds, so don't get jumpscared, keep your volume at 
 
 
 
-[[Continue]]
+> [[CONTINUE]]
 
 
 
 
 
 
-::Continue
+::CONTINUE
 sound.ambient.date.url: 'date.mp3'
 sound.ambient.oscar.url: 'oscarint.mp3'
 sound.ambient.dream.url: 'dream.mp3'
@@ -196,12 +196,12 @@ And that’s what this game is about.
 
 Do well, do terribly, lie, flirt, or lose your mind—none of it may matter, or all of it might. Welcome to *Interview Interview*, a surreal journey through questions, choices, and the realization that maybe, just maybe, none of this was ever in your control.  
 
-> [[Start ->Instructions]]
-> [[About ->AboutGame]]
-> [[Credits]]
+> [[START GAME]]
+> [[ABOUT]]
+> [[CREDITS]]
 
 
-:: Instructions
+:: START GAME
 
 {no ambient sound}
 # Instructions
@@ -212,11 +212,11 @@ Most questions have four choices each, they follow the pattern of being professi
 
 Finishing the game takes you to the Statistics page which shows you some of the variables being tracked in the game with your responses, scoring high enough in each at times unlock different dialogues and achievements. The Achievement section lists all the achievements unlocked after you complete the story.
 
-You can switch the themes using the button below, you can restart if you are dissapointed with your choices, although there is no real game over in this game. Restarting the game deletes you achievements, be sure to keep that in mind.
+You can switch the themes using the button below, you can restart if you are dissapointed with your choices, although there is no real game over in this game. Restarting the game deletes your achievements, be sure to keep that in mind.
 
-[[Chapters]]
+> [[CHAPTERS]]
 
-:: Chapters
+:: CHAPTERS
 
 
 # Chapters
@@ -233,10 +233,10 @@ Chapter 4: Reptillian Reverie
 
 
 
-[[Start->OscarInterview]]
+> [[START->OscarInterview]]
 
 
-:: AboutGame
+:: ABOUT
 
 # About the Game
 
@@ -254,7 +254,7 @@ At its core, this is a game about interviews. But it's also about something bigg
 
 Answers you gave in one scene might resurface in another, creeping into conversations where they don’t belong. The lines between job interviews, romance, and self-reflection blur, twisting into something absurd, something unsettling. Each choice carves out a path, but—is it really yours? Or are you just picking what sounds right in the moment?
 
-Comedy and existentialism. Because life is a joke, but the punchline keeps changing.
+Comedy and existentialism go hand in hand, because life is a joke, but the punchline keeps changing.
 
 [after 7s]
 
@@ -267,16 +267,16 @@ Who knows?
 Press Start. Let’s find out.  
   
   
-# Bugs  
+<H2> Bugs </H2>
   
-Heavy effort has been put into making sure there are no bugs or spelling mistakes in the game, yet if you find one, I'd appreciate you making an issue at the [source repo of the game](https://github.com/ronynn/interview-interview) or [alerting me on the intfiction forum](https://intfiction.org/u/r01nx/summary).
+Heavy effort has been put into making sure there are no bugs or spelling mistakes in the game, yet if you find one, I'd appreciate you making an issue at the [source repo of the game](https://github.com/ronynn/interview-interview) or [alerting me on the intfiction forum](https://intfiction.org/u/r01nx/summary). Speaking of the source, I could always use some more github stars 🌟.
 
 
-{back link}
+> {back link}
 
 
 
-:: Credits
+:: CREDITS
 
 The Game uses the Twine StoryFormat Chapbook, and tries to make the best use of it.
 
@@ -289,7 +289,7 @@ Art: Autodesk sketchbook, Aseprite, MSDesigner
 Playtester: Thanks to netto_no_neko for testing out the game.
 
 
-{back link}
+> {back link}
 
 
 
@@ -325,6 +325,8 @@ noman:false
 --
 {ambient sound: 'oscar'}
 
+
+# Oscars Interview
 
 <span class="spotlight">The bright lights flash, the cameras click, and the buzz of excitement fills the air. </span> You stand on the red carpet, the golden statue firm in your grip. The interviewer, dazzling in a sequined gown, approaches with a microphone in hand. Around you, the crowd hums with anticipation—some fans waving banners with your name, photographers jostling for position. The air is thick with perfume, sweat, and the unmistakable energy of stardom.
 
@@ -409,7 +411,7 @@ The interviewer’s eyes widen slightly. The audience shifts uncomfortably, a fe
 
 
 
-2. "Oh, I’ll comment. Love is a disaster, relationships are a battlefield, and my last date ended with an argument about pineapple on pizza, why arr they charging 100 dollars for it even as a joke?" 
+2. "Oh, I’ll comment. Love is a disaster, relationships are a battlefield, and my last date ended with an argument about pineapple on pizza, why are they charging 100 dollars for it even as a joke?" 
 [[Pick->cint22]]
 
 
